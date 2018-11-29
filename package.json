@@ -1,0 +1,19 @@
+{
+  "name": "auriga",
+  "version": "1.0.0",
+  "description": "A visual language developed for an imaginary (or future) role-playing game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeValle/auriga.git"
+  },
+  "author": "Jorge Valle",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JorgeValle/auriga/issues"
+  },
+  "homepage": "https://github.com/JorgeValle/auriga#readme"
+}
