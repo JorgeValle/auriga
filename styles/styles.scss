@@ -1,0 +1,18 @@
+@import 'colors';
+@import 'fonts';
+@import 'spacing';
+@import 'borders';
+
+@import 'character-profile';
+@import 'dialogue-box';
+@import 'item-profile';
+
+.logo h1 {
+  // display: inline;
+  font-family: $title-font;
+}
+
+.logo img {
+  margin-top: 18px;
+  width: 50px;
+}

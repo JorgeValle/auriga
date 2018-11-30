@@ -1,0 +1,11 @@
+$border-base-unit: 3px;
+
+.border-solid {
+  border: 1px solid $lightest-grey;
+}
+.border-groove {
+  border: 1px groove $lightest-grey;
+}
+.border-double {
+  border: ($border-base-unit * 2) double $lightest-grey;
+}
