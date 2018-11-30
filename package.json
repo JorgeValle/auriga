@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/JorgeValle/auriga/issues"
   },
-  "homepage": "https://github.com/JorgeValle/auriga#readme"
+  "homepage": "https://github.com/JorgeValle/auriga#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "sass": "^1.15.1"
+  }
 }
