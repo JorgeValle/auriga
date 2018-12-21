@@ -1,26 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+// import CharacterImage from './CharacterImage';
+// import CharacterName from './CharacterName';
+// import DialogueContent from './DialogueContent';
+import DialogueBox from './DialogueBox';
+
+const CHARACTER = [
+  {
+    name: 'Delita Heiral',
+    image: 'https://placehold.it/144x233',
+    description: 'Sed pellentesque eu purus nec dapibus'
+  }
+];
+
+const DIALOGUE = [
+  {
+    value: 'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.'
+  }
+];
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <DialogueBox dialogue={DIALOGUE} character={CHARACTER} />
     );
   }
 }
