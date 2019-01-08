@@ -1,17 +1,17 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class CharacterName extends React.Component {
+class Chapter extends React.Component {
   render() {
 
     console.log(this.props);
 
-    const character = this.props.character;
+    const chapter = this.props.chapter;
 
     return (
-      <h1>{character.name}</h1>
+      <h1>{chapter.number}: {chapter.name}</h1>
     );
   }
 }
 
-export default CharacterName;
+export default Chapter;

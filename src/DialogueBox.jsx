@@ -8,9 +8,9 @@ class DialogueBox extends React.Component {
   render() {
     return (
       <div>
-      <CharacterImage character={this.props.character} />
-      <CharacterName character={this.props.character} />
-      <DialogueContent dialogue={this.props.dialogue} />
+        <CharacterImage character={this.props.character} />
+        <CharacterName character={this.props.character} />
+        <DialogueContent dialogue={this.props.dialogue} />
       </div>
     );
   }

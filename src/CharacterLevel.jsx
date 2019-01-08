@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class CharacterImage extends React.Component {
+class CharacterLevel extends React.Component {
   render() {
 
     console.log(this.props);
@@ -9,9 +9,9 @@ class CharacterImage extends React.Component {
     const character = this.props.character;
 
     return (
-      <img src={character.image} alt={character.description} title={character.description} />
+      <h3>Level: <small>{character.stats.xp.level}</small></h3>
     );
   }
 }
 
-export default CharacterImage;
+export default CharacterLevel;
