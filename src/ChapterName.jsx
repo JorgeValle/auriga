@@ -7,7 +7,8 @@ class ChapterName extends React.Component {
     const chapter = this.props.chapter;
 
     return (
-      <span>{chapter.name}</span> );
+      <span className="chapter-name">{chapter.name}</span>
+      );
   }
 }
 

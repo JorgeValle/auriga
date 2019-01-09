@@ -1,12 +1,19 @@
 .character-level-up {
 
+  // Grid
   display: grid !important;
   grid-template-columns: 34% 55% 8%;
   grid-template-rows: auto auto auto auto auto;
 
+  // Padding
+  padding: $base-unit * fibonacci(8);
+
+  // Borders
+  border: 1px solid $lightest-grey;
+
   .character-image {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 5;
   }
  
   .character-name {

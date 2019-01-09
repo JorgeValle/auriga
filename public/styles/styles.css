@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .border-solid {
   border: 1px solid #e3e3e3;
 }
@@ -65,16 +119,40 @@
   background-color: #575757;
 }
 
+.chapter-name {
+  font-family: "Lora", serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.chapter-number {
+  font-family: "Lora", serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.total-play-time {
+  font-family: "Lora", serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #575757;
+}
+
 .character-profile {
   display: grid !important;
   grid-template-columns: 34% 55% 8%;
   grid-template-rows: auto auto auto auto auto auto;
-  padding-left: 34px;
-  padding-right: 34px;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
 }
 .character-profile .character-image {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1/span 5;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 34px;
 }
 .character-profile .character-level {
   grid-column: 1;
@@ -134,10 +212,12 @@
   display: grid !important;
   grid-template-columns: 34% 55% 8%;
   grid-template-rows: auto auto auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
 }
 .character-level-up .character-image {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1/span 5;
 }
 .character-level-up .character-name {
   grid-column: 2;
@@ -164,6 +244,8 @@
   display: grid !important;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
 }
 .dialogue-box .character-image {
   grid-column: 1;
@@ -185,7 +267,7 @@
   }
   .dialogue-box .character-image {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1/span 2;
   }
   .dialogue-box .character-name {
     grid-column: 2;
@@ -196,89 +278,20 @@
     grid-row: 2;
   }
 }
-.char-profile {
+.save-slot {
   display: grid !important;
-  grid-template-columns: 144px 125px 50px auto;
-  grid-template-rows: 50px 50px 50px 50px 20px 20px;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
 }
-.char-profile .name {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 21px;
-  font-family: "Lora", serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  grid-column: 2/span 4;
-  grid-row: 1;
-  color: #000000;
-}
-.char-profile .job {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-family: "Lora", serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  grid-column: 2/span 4;
-  grid-row: 2;
-  color: #575757;
-}
-.char-profile .img {
-  padding: 21px;
+.save-slot .character-image {
   grid-column: 1;
   grid-row: 1;
 }
-.char-profile .lvl {
-  grid-column: 2/span 4;
-  grid-row: 3;
-  color: #8c8c8c;
-  text-transform: lowercase;
-}
-.char-profile .lvl .number {
-  font-family: "Lora", serif;
-  font-size: 2em;
-  font-weight: 400;
-}
-.char-profile .lvl progress {
-  -webkit-appearance: none;
-  /* Reset appearance */
-  border: 1px solid #8c8c8c;
-  width: 300px;
-  background-color: #575757;
-}
-.char-profile .hp {
-  grid-column: 2;
-  grid-row: 4;
-}
-.char-profile .hp meter {
-  border: 1px solid #8c8c8c;
-  width: 300px;
-  background-color: #575757;
-}
-.char-profile .mp {
-  grid-column: 2;
-  grid-row: 5;
-}
-.char-profile .mp meter {
-  border: 1px solid #8c8c8c;
-  width: 300px;
-  background-color: #575757;
-}
-.char-profile .mp meter::-webkit-meter-optimum-value {
-  background-color: steelblue;
-}
-
-body {
-  margin: 0 auto;
-  line-height: 16px;
-}
-
-.logo h1 {
-  font-family: "Lora", serif;
-}
-
-.logo img {
-  margin-top: 18px;
-  width: 50px;
+.save-slot .party-images {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */

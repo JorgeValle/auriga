@@ -7,7 +7,7 @@ class ChapterNumber extends React.Component {
     const chapter = this.props.chapter;
 
     return (
-      <span>Chapter {chapter.number}:</span>
+      <span className="chapter-number">Chapter {chapter.number}:</span>
       );
   }
 }

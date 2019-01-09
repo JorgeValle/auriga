@@ -1,8 +1,15 @@
 .dialogue-box {
 
+  // Grid
   display: grid !important;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto;
+
+  // Padding
+  padding: $base-unit * fibonacci(8);
+
+  // Borders
+  border: 1px solid $lightest-grey;
 
   .character-image {
     grid-column: 1;
@@ -28,7 +35,7 @@
 
     .character-image {
       grid-column: 1;
-      grid-row: 1;
+      grid-row: 1 / span 2;
     }
   
     .character-name {
