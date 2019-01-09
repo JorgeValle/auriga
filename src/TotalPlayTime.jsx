@@ -4,8 +4,6 @@ import React from 'react';
 class TotalPlayTime extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const time = this.props.time;
 
     return (

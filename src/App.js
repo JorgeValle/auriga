@@ -7,11 +7,33 @@ import CharacterLevelUp from './CharacterLevelUp';
 import DialogueBox from './DialogueBox';
 import SaveSlot from './SaveSlot';
 
-const CHARACTER = [
+const CHARACTER = {
+  name: 'Delita Heiral',
+  job: 'Arithmetician',
+  image: 'https://placehold.it/144x233',
+  description: 'Sed pellentesque eu purus nec dapibus',
+  stats: {
+    hp: {
+      current: 101,
+      max: 202
+    },
+    mp: {
+      current: 59,
+      max: 89
+    },
+    xp: {
+      level: 2,
+      current: 2345,
+      next: 2500
+    }
+  }
+};
+
+const PARTY = [
   {
-    name: 'Delita Heiral',
+    name: 'Cloud Strife',
     job: 'Arithmetician',
-    image: 'https://placehold.it/144x233',
+    image: 'https://placehold.it/55x34',
     description: 'Sed pellentesque eu purus nec dapibus',
     stats: {
       hp: {
@@ -32,7 +54,7 @@ const CHARACTER = [
   {
     name: 'Ramza Beoulve',
     job: 'Knight',
-    image: 'https://placehold.it/144x233',
+    image: 'https://placehold.it/55x34',
     description: 'Nulla eros ex, consequat a dapibus',
     stats: {
       hp: {
@@ -53,7 +75,7 @@ const CHARACTER = [
   {
     name: 'Agrias',
     job: 'Holy Knight',
-    image: 'https://placehold.it/144x233',
+    image: 'https://placehold.it/55x34',
     description: 'Morbi tristique nisi lorem, vitae ultrices tellus dapibus et',
     stats: {
       hp: {
@@ -78,6 +100,20 @@ const DIALOGUE = [
     value: 'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.'
   }
 ];
+
+const CHAPTER = [
+  {
+    name: 'Church Escape',
+    number: 3
+  }
+];
+
+const TIME = [
+  {
+    hours: 4,
+    mins: 32
+  }
+]
 
 const ABILITIES = [
   
@@ -114,10 +150,10 @@ function App() {
         </ul>
 {/* 
         <Route exact path="/" component={Home} /> */}
-        <Route path="/character-profile" render={(props) => <CharacterProfile {...props} character={CHARACTER[0]} />} />
-        <Route path="/character-level-up" render={(props) => <CharacterLevelUp {...props} character={CHARACTER[0]} />} />
-        {/* <Route path="/save-slot" component={SaveSlot} /> */}
-        <Route path="/dialogue-box" render={(props) => <DialogueBox {...props} character={CHARACTER[0]} dialogue={DIALOGUE[0]} />} />
+        <Route path="/character-profile" render={(props) => <CharacterProfile {...props} character={CHARACTER} />} />
+        <Route path="/character-level-up" render={(props) => <CharacterLevelUp {...props} character={CHARACTER} />} />
+        <Route path="/save-slot" render={(props) => <SaveSlot {...props} character={CHARACTER} party={PARTY} chapter={CHAPTER[0]} time={TIME[0]} />} />
+        <Route path="/dialogue-box" render={(props) => <DialogueBox {...props} character={CHARACTER} dialogue={DIALOGUE[0]} />} />
 
       </div>
     </Router>
