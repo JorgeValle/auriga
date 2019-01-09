@@ -1,0 +1,50 @@
+.dialogue-box {
+
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+
+  .character-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .character-name {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dialogue-content {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  // On medium
+  @media screen and (min-width: $break-medium) {
+
+    display: grid !important;
+    grid-template-columns: 21% 55%;
+    grid-template-rows: auto auto;
+
+    .character-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  
+    .character-name {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  
+    .dialogue-content {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+  }
+
+  // On wide
+  @media screen and (min-width: $break-wide) {
+
+  }
+}

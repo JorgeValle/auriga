@@ -4,12 +4,10 @@ import React from 'react';
 class DialogueContent extends React.Component {
   render() {
 
-    console.log(this.props);
-
-    const dialogue = this.props.dialogue[0];
+    const dialogue = this.props.dialogue;
 
     return (
-      <p>{dialogue.value}</p>
+      <p className="dialogue-content">{dialogue.value}</p>
     );
   }
 }

@@ -4,12 +4,10 @@ import React from 'react';
 class HitPoints extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const hp = this.props.character.hp;
 
     return (
-      <div>
+      <div className="hit-points">
         <span>HP</span>
         <meter value={hp} min="0" max="10" low="2" high="8" optimum="10"></meter>
       </div>

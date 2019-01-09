@@ -1,0 +1,39 @@
+@import 'units';
+@import 'functions';
+@import 'spacing';
+@import 'colors';
+@import 'fonts';
+@import 'borders';
+@import 'backgrounds';
+@import 'media-breakpoints';
+
+// Characters
+@import 'character-name';
+@import 'character-job';
+@import 'character-image';
+
+// Meters
+@import 'hit-points';
+@import 'magic-points';
+@import 'experience-points';
+
+// Components
+@import 'character-profile';
+@import 'character-level-up';
+@import 'dialogue-box';
+@import 'save-slot';
+
+body {
+  margin: 0 auto;
+  line-height: 16px;
+}
+
+.logo h1 {
+  // display: inline;
+  font-family: $title-font;
+}
+
+.logo img {
+  margin-top: 18px;
+  width: 50px;
+}

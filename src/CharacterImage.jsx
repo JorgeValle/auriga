@@ -4,12 +4,10 @@ import React from 'react';
 class CharacterImage extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const character = this.props.character;
 
     return (
-      <img src={character.image} alt={character.description} title={character.description} />
+      <img className="character-image" src={character.image} alt={character.description} title={character.description} />
     );
   }
 }

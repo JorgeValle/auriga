@@ -1,0 +1,93 @@
+.character-profile {
+
+  display: grid !important;
+  grid-template-columns: 34% 55% 8%;
+  grid-template-rows: auto auto auto auto auto auto;
+
+  padding-left: $base-unit * fibonacci(8);
+  padding-right: $base-unit * fibonacci(8);
+
+  .character-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .character-level {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .character-name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .character-job {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .hit-points {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .magic-points {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .experience-points {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  // On narrow
+  @media screen and (min-width: $break-narrow) {
+
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+
+    .character-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+   
+    .character-name {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  
+    .character-job {
+      grid-column: 1;
+      grid-row: 3;
+    }
+  
+    .hit-points {
+      grid-column: 1;
+      grid-row: 4;
+    }
+  
+    .magic-points {
+      grid-column: 1;
+      grid-row: 5;
+    }
+  
+    .experience-points {
+      grid-column: 1;
+      grid-row: 6;
+    }
+
+  }
+  
+  // On medium
+  @media screen and (min-width: $break-medium) {
+
+  }
+
+  // On wide
+  @media screen and (min-width: $break-wide) {
+
+  }
+
+}

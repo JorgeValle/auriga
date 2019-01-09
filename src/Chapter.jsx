@@ -4,8 +4,6 @@ import React from 'react';
 class Chapter extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const chapter = this.props.chapter;
 
     return (

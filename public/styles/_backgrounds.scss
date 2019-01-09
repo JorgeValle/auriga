@@ -1,0 +1,22 @@
+.mages {
+  background: repeating-linear-gradient(
+  325deg, /* Because it's reflection of 55, a Fib sequence value */
+  $white, /* Start color */
+  $white ($base-unit * fibonacci(4)),
+  $light-grey ($base-unit * fibonacci(4)),
+  $light-grey ($base-unit * fibonacci(5))); /* End color */
+  background-size: 100%;
+  height: 233px;
+}
+.loyalists {
+  background-color: $white;
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-image: -webkit-linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey),
+                    -webkit-linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey);
+  background-image: -moz-linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey),
+                    -moz-linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey);
+  background-image: linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey),
+                    linear-gradient(45deg, $light-grey 25%, transparent 25%, transparent 75%, $light-grey 75%, $light-grey);
+  height: 233px;
+}

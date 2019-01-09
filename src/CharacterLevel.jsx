@@ -4,8 +4,6 @@ import React from 'react';
 class CharacterLevel extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const character = this.props.character;
 
     return (

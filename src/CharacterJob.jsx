@@ -4,12 +4,10 @@ import React from 'react';
 class CharacterJob extends React.Component {
   render() {
 
-    console.log(this.props);
-
     const character = this.props.character;
 
     return (
-      <h2>{character.job}</h2>
+      <h2 className="character-job">{character.job}</h2>
     );
   }
 }

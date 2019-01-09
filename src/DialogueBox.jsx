@@ -7,7 +7,7 @@ import CharacterName from './CharacterName';
 class DialogueBox extends React.Component {
   render() {
     return (
-      <div>
+      <div className="dialogue-box">
         <CharacterImage character={this.props.character} />
         <CharacterName character={this.props.character} />
         <DialogueContent dialogue={this.props.dialogue} />

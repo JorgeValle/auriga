@@ -7,8 +7,6 @@ import CharacterLevelUp from './CharacterLevelUp';
 import DialogueBox from './DialogueBox';
 import SaveSlot from './SaveSlot';
 
-import './index.css'
-
 const CHARACTER = [
   {
     name: 'Delita Heiral',
@@ -119,7 +117,7 @@ function App() {
         <Route path="/character-profile" render={(props) => <CharacterProfile {...props} character={CHARACTER[0]} />} />
         <Route path="/character-level-up" render={(props) => <CharacterLevelUp {...props} character={CHARACTER[0]} />} />
         {/* <Route path="/save-slot" component={SaveSlot} /> */}
-        <Route path="/dialogue-box" component={DialogueBox} />
+        <Route path="/dialogue-box" render={(props) => <DialogueBox {...props} character={CHARACTER[0]} dialogue={DIALOGUE[0]} />} />
 
       </div>
     </Router>

@@ -11,7 +11,7 @@ import MagicPoints from './MagicPoints';
 class CharacterProfile extends React.Component {
   render() {
     return (
-      <section>
+      <section className="character-profile">
         <CharacterImage character={this.props.character} />
         <CharacterName character={this.props.character} />
         <CharacterJob character={this.props.character} />
