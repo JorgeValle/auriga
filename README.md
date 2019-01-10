@@ -1,44 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Auriga
 
-## Available Scripts
+As a kid, I grew up playing a lot of RPG and strategy games. Far and away they were my favorite games. They still are. Games like [Dragon Force](https://en.wikipedia.org/wiki/Dragon_Force), [Final Fantasy Tactics](https://en.wikipedia.org/wiki/Final_Fantasy_Tactics) and [Tactics Ogre](https://en.wikipedia.org/wiki/Tactics_Ogre:_Let_Us_Cling_Together) have a special place in my heart.
 
-In the project directory, you can run:
+Auriga is a visual language for an imaginary (or yet to be developed?) role-playing and strategy game. It is a series of user interface elements typically found in RPGs. Stuff like character profiles, item descriptions and dialogue components - all working together to create the style of a medieval western world. It's inspired by a lot of older games, but it's built using pretty modern CSS techniques and React components.
 
-### `npm start`
+One day, I might get around to developing the game itself.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## At a glance
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Auriga is a React(v.16) app that is styled mostly with CSS grid. As a playful and frontline project, I was unconcerned with making it compatible with most browser, although [CSS grid support is improving](https://caniuse.com/#feat=css-grid).
 
-### `npm test`
+## Running the project
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Download the source, navigate to the root, and start the React app as you normally would.
 
-### `npm run build`
+`
+npm start
+`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If it doesn't work, try installing all packages first.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+`
+npm install
+`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Current components
 
-### `npm run eject`
+This is the list of components currently making up the project. As other components are developed, they will be added here.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Character Profile
+* Character Level Up
+* Save Slot
+* Dialogue Box
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Copyright 2019 Jorge Valle
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-## Learn More
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
