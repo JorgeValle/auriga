@@ -24,6 +24,8 @@ If it doesn't work, try installing all packages first.
 npm install
 `
 
+App can then be found at http://localhost:3000
+
 ## Current components
 
 This is the list of components currently making up the project. As other components are developed, they will be added here.
