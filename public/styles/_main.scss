@@ -1,0 +1,39 @@
+.main {
+
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 89%;
+
+  padding-bottom: $base-unit * fibonacci(8);
+
+  .logo {
+    width: 100px;
+    display: inline;
+  }
+
+  .brand {
+    display: inline;
+    font-family: $title-font;
+    font-size: 3.7em;
+    font-weight: 700;
+    color: $black;
+  }
+
+  .intro {
+    margin-top: $base-unit * fibonacci(8);
+  
+    p {
+      padding-bottom: $base-unit * fibonacci(6);
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    ul {
+      margin-top: $base-unit * fibonacci(7);
+      margin-bottom: $base-unit * fibonacci(8);
+      line-height: 1.5;
+      font-size: 18px;
+    }
+  }
+
+}

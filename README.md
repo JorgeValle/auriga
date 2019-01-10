@@ -26,6 +26,10 @@ npm install
 
 App can then be found at http://localhost:3000
 
+## Attributions
+
+Chariot and Horse by Andrew Doane from the Noun Project
+
 ## Current components
 
 This is the list of components currently making up the project. As other components are developed, they will be added here.

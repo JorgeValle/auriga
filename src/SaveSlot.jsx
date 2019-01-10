@@ -13,7 +13,7 @@ class SaveSlot extends React.Component {
       <section className="save-slot">
         <CharacterImage character={this.props.character} />
         <PartyImages party={this.props.party} />
-        <h1>
+        <h1 className="chapter">
           <ChapterNumber chapter={this.props.chapter} />
           &nbsp;
           <ChapterName chapter={this.props.chapter} />

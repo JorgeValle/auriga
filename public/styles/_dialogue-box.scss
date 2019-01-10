@@ -38,10 +38,10 @@
   }
 
   // On medium
-  @media screen and (min-width: $break-medium) {
+  @media screen and (min-width: $break-narrow) {
 
     display: grid !important;
-    grid-template-columns: 21% 55%;
+    grid-template-columns: 34% 55%;
     grid-template-rows: auto auto;
 
     .character-image {
