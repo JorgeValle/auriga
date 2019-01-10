@@ -14,30 +14,15 @@ class CharacterProfile extends React.Component {
   // To make UI interactive, we need to be able to trigger changes to underlying data model
   render() {
     return (
-
-      <div>
-        <button>Increase HP</button>
-        <button>Decrease HP</button>
-        <button>Increase MP</button>
-        <button>Decrease MP</button>
-        <button>Increase XP</button>
-        <button>Decrease XP</button>
-
-        <button>Rotate Character</button>
-
-        <button>Set Level</button>
-
-        <section className="character-profile">
-          <CharacterImage character={this.props.character} />
-          <CharacterName character={this.props.character} />
-          <CharacterJob character={this.props.character} />
-          <CharacterLevel character={this.props.character} />
-          <ExperiencePoints character={this.props.character} />
-          <HitPoints character={this.props.character} />
-          <MagicPoints character={this.props.character} />
-        </section>
-
-      </div>
+      <section className="character-profile">
+        <CharacterImage character={this.props.character} />
+        <CharacterName character={this.props.character} />
+        <CharacterJob character={this.props.character} />
+        <CharacterLevel character={this.props.character} />
+        <ExperiencePoints character={this.props.character} />
+        <HitPoints character={this.props.character} />
+        <MagicPoints character={this.props.character} />
+      </section>
     );
   }
 }

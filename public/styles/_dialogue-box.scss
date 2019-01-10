@@ -14,16 +14,27 @@
   .character-image {
     grid-column: 1;
     grid-row: 1;
+
+    background-color: $black;
+    background-image: $checkers;
+    padding: $base-unit * fibonacci(8);
   }
 
   .character-name {
     grid-column: 1;
     grid-row: 2;
+
+    // Padding
+    padding-top: $base-unit * fibonacci(6);
+    padding-bottom: $base-unit * fibonacci(6);
   }
 
   .dialogue-content {
     grid-column: 1;
     grid-row: 3;
+
+    // Padding
+    padding-bottom: $base-unit * fibonacci(6);
   }
 
   // On medium

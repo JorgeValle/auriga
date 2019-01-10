@@ -7,11 +7,20 @@ import CharacterName from './CharacterName';
 class DialogueBox extends React.Component {
 
   // DialogueBox component owns page number state
+  // Components should only update their own state
   constructor(props) {
     super(props);
     this.state = {
       pageNum: 0
     };
+    this.handlePageUp = this.handlePageUp.bind(this);
+  }
+
+  handlePageUp() {
+
+    this.setState({
+      pageNum: 1
+    });
   }
 
   render() {

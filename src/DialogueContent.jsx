@@ -14,6 +14,9 @@ class DialogueContent extends React.Component {
       <div>
         <p className="dialogue-content">{dialogue.value[pageNum]}</p>
         <span>{pageNum}</span>
+        <button>Previous</button>
+        <button>Next</button>
+        <button>End</button>
       </div>
 
     );

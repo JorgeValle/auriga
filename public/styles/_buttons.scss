@@ -1,0 +1,10 @@
+button {
+
+  background-color: $white;
+  border: 1px solid $lightest-grey;
+  cursor: pointer;
+  font-family: $body-font;
+  font-size: 0.9em;
+  padding: $base-unit * fibonacci(6);
+
+}
