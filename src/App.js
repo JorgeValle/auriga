@@ -97,7 +97,11 @@ const PARTY = [
 
 const DIALOGUE = [
   {
-    value: 'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.'
+    value: [
+      'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.',
+      'Morbi at ligula ut orci pharetra interdum nec elementum velit. Suspendisse ac felis odio. Phasellus vestibulum elit quis augue rhoncus convallis.',
+      'Donec libero felis, feugiat eget sapien eget, vehicula vehicula odio. Quisque eu viverra erat. Phasellus sodales nibh ultricies eros sagittis lacinia.'
+    ]
   }
 ];
 

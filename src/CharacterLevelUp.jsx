@@ -11,15 +11,25 @@ import MagicPoints from './MagicPoints';
 class CharacterLevelUp extends React.Component {
   render() {
     return (
-      <section className="character-level-up">
-        <CharacterImage character={this.props.character} />
-        <CharacterName character={this.props.character} />
-        <CharacterJob character={this.props.character} />
-        <CharacterLevel character={this.props.character} />
-        <ExperiencePoints character={this.props.character} />
-        <HitPoints character={this.props.character} />
-        <MagicPoints character={this.props.character} />
-      </section>
+      <div>
+        <button>Rotate Character</button>
+        <button>Increase Intelligence</button>
+        <button>Decrease Intelligence</button>
+        <button>Increase Level</button>
+        <button>Decrease Level</button>
+        <section className="character-level-up">
+          <CharacterImage character={this.props.character} />
+          <CharacterName character={this.props.character} />
+          <CharacterJob character={this.props.character} />
+          <CharacterLevel character={this.props.character} />
+          <ExperiencePoints character={this.props.character} />
+          <HitPoints character={this.props.character} />
+          <MagicPoints character={this.props.character} />
+        </section>
+      </div>
+
+
+      
     );
   }
 }
