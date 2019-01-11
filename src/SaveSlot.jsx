@@ -1,6 +1,7 @@
 import React from 'react';
 import ChapterNumber from './ChapterNumber';
 import ChapterName from './ChapterName';
+import ChapterDescription from './ChapterDescription';
 import TotalPlayTime from './TotalPlayTime';
 import PartyImages from './PartyImages';
 import CharacterImage from './CharacterImage';
@@ -18,6 +19,7 @@ class SaveSlot extends React.Component {
           <ChapterNumber chapter={this.props.chapter} />
           &nbsp;
           <ChapterName chapter={this.props.chapter} />
+          <ChapterDescription chapter={this.props.chapter} />
         </h1>
         <TotalPlayTime time={this.props.time} />
         <CharacterLevel character={this.props.character} />

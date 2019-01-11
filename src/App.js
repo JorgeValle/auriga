@@ -33,7 +33,7 @@ const PARTY = [
   {
     name: 'Cloud Strife',
     job: 'Arithmetician',
-    image: 'https://placehold.it/55x34',
+    image: 'https://placehold.it/34x55',
     description: 'Sed pellentesque eu purus nec dapibus',
     stats: {
       hp: {
@@ -54,7 +54,7 @@ const PARTY = [
   {
     name: 'Ramza Beoulve',
     job: 'Knight',
-    image: 'https://placehold.it/55x34',
+    image: 'https://placehold.it/34x55',
     description: 'Nulla eros ex, consequat a dapibus',
     stats: {
       hp: {
@@ -75,7 +75,7 @@ const PARTY = [
   {
     name: 'Agrias',
     job: 'Holy Knight',
-    image: 'https://placehold.it/55x34',
+    image: 'https://placehold.it/34x55',
     description: 'Morbi tristique nisi lorem, vitae ultrices tellus dapibus et',
     stats: {
       hp: {
@@ -108,7 +108,8 @@ const DIALOGUE = [
 const CHAPTER = [
   {
     name: 'Church Escape',
-    number: 3
+    number: 3,
+    description: 'Pellentesque urna mauris, elementum id sapien nec, hendrerit rutrum sem. Phasellus ut justo metus. Ut quis neque sed lacus commodo aliquam.'
   }
 ];
 
@@ -129,7 +130,7 @@ function App() {
       <main className="main">
 
         <div className="masthead">
-          <img className="logo" src="svgs/chariot.svg" alt="Auriga logo" />
+          {/* <img className="logo" src="svgs/chariot.svg" alt="Auriga logo" /> */}
           <h1 className="brand">Auriga</h1>
         </div>
 
@@ -153,6 +154,8 @@ function App() {
             <li>
               <Link to="/dialogue-box">Dialogue Box</Link>
             </li>
+          </ul>
+          <ul>
             <li>
               Character Manage
             </li>

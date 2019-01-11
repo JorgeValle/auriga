@@ -18,7 +18,7 @@ class CharacterProfile extends React.Component {
         <CharacterImage character={this.props.character} />
         <CharacterName character={this.props.character} />
         <CharacterJob character={this.props.character} />
-        <CharacterLevel character={this.props.character} />
+        {/* <CharacterLevel character={this.props.character} /> */}
         <ExperiencePoints character={this.props.character} />
         <HitPoints character={this.props.character} />
         <MagicPoints character={this.props.character} />

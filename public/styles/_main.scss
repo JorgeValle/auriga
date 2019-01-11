@@ -6,6 +6,10 @@
 
   padding-bottom: $base-unit * fibonacci(8);
 
+  .masthead {
+    margin-top: $base-unit * fibonacci(8);
+  }
+
   .logo {
     width: 100px;
     display: inline;
