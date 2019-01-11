@@ -7,7 +7,10 @@ class TotalPlayTime extends React.Component {
     const time = this.props.time;
 
     return (
-      <time className="total-play-time">{time.hours}: {time.mins}</time>
+      <div>
+        <img className="hourglass" src="svgs/hourglass.svg" alt="Total play time hourglass" />
+        <time className="total-play-time">{time.hours}: {time.mins}</time>
+      </div>
     );
   }
 }

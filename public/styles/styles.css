@@ -262,9 +262,6 @@ button {
 .dialogue-box .character-image {
   grid-column: 1;
   grid-row: 1;
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
-  padding: 34px;
 }
 .dialogue-box .character-name {
   grid-column: 1;
@@ -275,21 +272,24 @@ button {
 .dialogue-box .dialogue-content {
   grid-column: 1;
   grid-row: 3;
+  font-size: 1.5em;
   padding-bottom: 13px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 800px) {
   .dialogue-box {
     display: grid !important;
-    grid-template-columns: 34% 55%;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
   .dialogue-box .character-image {
     grid-column: 1;
     grid-row: 1/span 2;
+    padding-right: 34px;
   }
   .dialogue-box .character-name {
     grid-column: 2;
     grid-row: 1;
+    padding-top: 0;
   }
   .dialogue-box .dialogue-content {
     grid-column: 2;
@@ -310,6 +310,7 @@ button {
 .save-slot .party-images {
   grid-column: 1;
   grid-row: 2;
+  padding-top: 8px;
 }
 .save-slot .chapter {
   grid-column: 1;
@@ -320,6 +321,30 @@ button {
 .save-slot .total-play-time {
   grid-column: 1;
   grid-row: 4;
+}
+@media screen and (min-width: 800px) {
+  .save-slot {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  .save-slot .character-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .save-slot .party-images {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .save-slot .chapter {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+  .save-slot .character-level {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

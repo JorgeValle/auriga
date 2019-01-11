@@ -5,6 +5,7 @@ import TotalPlayTime from './TotalPlayTime';
 import PartyImages from './PartyImages';
 import CharacterImage from './CharacterImage';
 import CharacterLevel from './CharacterLevel';
+import SaveButtons from './SaveButtons';
 
 // Components should represent one piece of data model
 class SaveSlot extends React.Component {
@@ -18,8 +19,9 @@ class SaveSlot extends React.Component {
           &nbsp;
           <ChapterName chapter={this.props.chapter} />
         </h1>
-        <CharacterLevel character={this.props.character} />
         <TotalPlayTime time={this.props.time} />
+        <CharacterLevel character={this.props.character} />
+        <SaveButtons />
       </section>
     );
   }

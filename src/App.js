@@ -114,7 +114,7 @@ const CHAPTER = [
 
 const TIME = [
   {
-    hours: 4,
+    hours: 14,
     mins: 32
   }
 ]
@@ -152,6 +152,12 @@ function App() {
             </li>
             <li>
               <Link to="/dialogue-box">Dialogue Box</Link>
+            </li>
+            <li>
+              Character Manage
+            </li>
+            <li>
+              
             </li>
           </ul>
         </section>
