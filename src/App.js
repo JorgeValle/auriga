@@ -14,7 +14,7 @@ const CHARACTER = {
   description: 'Sed pellentesque eu purus nec dapibus',
   stats: {
     hp: {
-      current: 101,
+      current: 10,
       max: 202
     },
     mp: {
@@ -23,8 +23,8 @@ const CHARACTER = {
     },
     xp: {
       level: 2,
-      current: 2345,
-      next: 2500
+      current: 1900,
+      max: 2500
     }
   }
 };
@@ -37,7 +37,7 @@ const PARTY = [
     description: 'Sed pellentesque eu purus nec dapibus',
     stats: {
       hp: {
-        current: 101,
+        current: 80,
         max: 202
       },
       mp: {

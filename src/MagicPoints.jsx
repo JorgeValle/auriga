@@ -6,12 +6,12 @@ class MagicPoints extends React.Component {
 
     console.log(this.props);
 
-    const mp = this.props.character.mp;
+    const mp = this.props.character.stats.mp;
 
     return (
       <div className="magic-points">
         <span>MP</span>
-        <meter value={mp} min="0" max="10" low="2" high="8" optimum="10"></meter>
+        <meter min="0" max={mp.max} value={mp.current}></meter>
       </div>
     );
   }
