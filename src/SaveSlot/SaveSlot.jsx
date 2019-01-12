@@ -1,10 +1,10 @@
 import React from 'react';
-import ChapterNumber from '../Shared/ChapterNumber';
-import ChapterName from '../Shared/ChapterName';
+import ChapterNumber from './ChapterNumber';
+import ChapterName from '../PlayerProfile/PlayerName';
 import ChapterDescription from '../SaveSlot/ChapterDescription';
 import TotalPlayTime from '../SaveSlot/TotalPlayTime';
 import PartyImages from '../Shared/PartyImages';
-import CharacterImage from '../Shared/CharacterImage';
+import CharacterImage from '../Shared/PlayerImage';
 import CharacterLevel from '../Shared/CharacterLevel';
 import SaveButtons from '../SaveSlot/SaveButtons';
 

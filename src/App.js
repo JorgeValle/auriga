@@ -13,9 +13,9 @@ const CHARACTER = {
   image: 'https://placehold.it/144x233',
   description: 'Sed pellentesque eu purus nec dapibus',
   stats: {
-    hp: {
+    pieces: {
       current: 10,
-      max: 202
+      max: 16
     },
     mp: {
       current: 59,

@@ -8,7 +8,7 @@ class TotalPlayTime extends React.Component {
 
     return (
       <div>
-        {/* <img className="hourglass" src="svgs/hourglass.svg" alt="Total play time hourglass" /> */}
+        <i class="fas fa-chess-stopwatch"></i>
         <time className="total-play-time">{time.hours}: {time.mins}</time>
       </div>
     );

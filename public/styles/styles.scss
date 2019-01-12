@@ -14,10 +14,19 @@
 // Main
 @import 'main';
 
-// Characters
-@import 'character-name';
-@import 'character-job';
-@import 'character-image';
+// Player
+@import 'player-name';
+@import 'player-status';
+@import 'player-image';
+@import 'player-health';
+
+// Pieces
+@import 'bishop';
+@import 'king';
+@import 'knight';
+@import 'pawn';
+@import 'queen';
+@import 'rook';
 
 // Meters
 @import 'hit-points';

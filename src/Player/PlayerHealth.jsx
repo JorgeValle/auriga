@@ -4,13 +4,13 @@ import React from 'react';
 class HitPoints extends React.Component {
   render() {
 
-    const hp = this.props.character.stats.hp;
+    const pieces = this.props.character.stats.pieces;
 
     return (
       <div className="hit-points">
-        <span>HP</span>
-        <meter min="0"  value={hp.current} max={hp.max}></meter>
-        <span>{hp.current} / {hp.max}</span>
+        <span>Pieces</span>
+        <meter min="0"  value={pieces.current} max={pieces.max}></meter>
+        <span>{pieces.current} / {pieces.max}</span>
       </div>
     );
   }
