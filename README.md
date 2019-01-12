@@ -2,13 +2,13 @@
 
 As a kid, I grew up playing a lot of RPG and strategy games. Far and away they were my favorite games. They still are. Games like [Dragon Force](https://en.wikipedia.org/wiki/Dragon_Force), [Final Fantasy Tactics](https://en.wikipedia.org/wiki/Final_Fantasy_Tactics) and [Tactics Ogre](https://en.wikipedia.org/wiki/Tactics_Ogre:_Let_Us_Cling_Together) have a special place in my heart.
 
-Auriga is a visual language for an imaginary (or yet to be developed?) role-playing and strategy game. It is a series of user interface elements typically found in RPGs. Stuff like character profiles, item descriptions and dialogue components - all working together to create the style of a medieval western world. It's inspired by a lot of older games, but it's built using pretty modern CSS techniques and React components.
+Euler's Quest is a visual language for an imaginary (or yet to be developed?) role-playing and strategy game. It is a series of user interface elements typically found in RPGs. Stuff like character profiles, item descriptions and dialogue components - all working together to create the style of a medieval, mathematically-themed western world.
 
-One day, I might get around to developing the game itself.
+It's inspired by a lot of older games, but it's built using pretty modern CSS techniques and React components.
 
 ## At a glance
 
-Auriga is a React(v.16) app that is styled mostly with CSS grid. As a playful and frontline project, I was unconcerned with making it compatible with most browser, although [CSS grid support is improving](https://caniuse.com/#feat=css-grid).
+Euler's Quest is a React(v.16) app that is styled mostly with CSS grid. As a playful and frontline project, I was unconcerned with making it compatible with most browser, although [CSS grid support is improving](https://caniuse.com/#feat=css-grid).
 
 ## Running the project
 

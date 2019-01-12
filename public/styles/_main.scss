@@ -10,15 +10,17 @@
     margin-top: $base-unit * fibonacci(8);
   }
 
-  .logo {
-    width: 100px;
-    display: inline;
+  .fa-chess-king {
+    font-size: 3em;
+    padding-right: $base-unit * fibonacci(6);
+    vertical-align: baseline;
   }
+  
 
   .brand {
     display: inline;
     font-family: $title-font;
-    font-size: 3.7em;
+    font-size: 3em;
     font-weight: 700;
     color: $black;
   }

@@ -107,7 +107,7 @@ const DIALOGUE = [
 
 const CHAPTER = [
   {
-    name: 'Church Escape',
+    name: 'In search of Archimedes',
     number: 3,
     description: 'Pellentesque urna mauris, elementum id sapien nec, hendrerit rutrum sem. Phasellus ut justo metus. Ut quis neque sed lacus commodo aliquam.'
   }
@@ -130,13 +130,13 @@ function App() {
       <main className="main">
 
         <div className="masthead">
-          {/* <img className="logo" src="svgs/chariot.svg" alt="Auriga logo" /> */}
-          <h1 className="brand">Auriga</h1>
+          <i class="fas fa-chess-king"></i>
+          <h1 className="brand">Shah Mat</h1>
         </div>
 
         <section className="intro">
           <p>As a kid, I grew up playing a lot of RPG and strategy games. Far and away, they were my favorite games. They still are. Games like <a href="https://en.wikipedia.org/wiki/Dragon_Force">Dragon Force</a>, <a href="https://en.wikipedia.org/wiki/Final_Fantasy_Tactics">Final Fantasy Tactics</a> and <a href="https://en.wikipedia.org/wiki/Tactics_Ogre:_Let_Us_Cling_Together">Tactics Ogre</a> have a special place in my heart.</p>
-          <p>Auriga is a visual language for an imaginary (or yet to be developed?) role-playing and strategy game. It is a series of user interface elements typically found in RPGs. Stuff like character profiles, item descriptions and dialogue components - all working together to create the style of a medieval western world. It's inspired by a lot of older games, but it's built using pretty modern CSS techniques and React components.</p>
+          <p>Euler's Quest is (hopefully) the beginning of a role-playing and strategy game. It is currently just a series of user interface elements typically found in RPGs. Stuff like character profiles, item descriptions and dialogue components - all working together to create the style of a medieval western world. It's inspired by a lot of older games, but it's built using pretty modern CSS techniques and React components.</p>
           <p>One day, I might get around to developing the game itself.</p>
           <ul>
             <li>
@@ -153,6 +153,9 @@ function App() {
             </li>
             <li>
               <Link to="/dialogue-box">Dialogue Box</Link>
+            </li>
+            <li>
+              <Link to="/chess-mat">Chess Mat</Link>
             </li>
           </ul>
         </section>
