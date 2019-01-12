@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {
   BrowserRouter as Router, Route, Link
 } from 'react-router-dom';
-import CharacterProfile from './CharacterProfile';
-import CharacterLevelUp from './CharacterLevelUp';
-import DialogueBox from './DialogueBox';
-import SaveSlot from './SaveSlot';
+import CharacterProfile from './CharacterProfile/CharacterProfile';
+import CharacterLevelUp from './CharacterLevelUp/CharacterLevelUp';
+import DialogueBox from './DialogueBox/DialogueBox';
+import SaveSlot from './SaveSlot/SaveSlot';
 
 const CHARACTER = {
   name: 'Delita Heiral',
@@ -153,14 +153,6 @@ function App() {
             </li>
             <li>
               <Link to="/dialogue-box">Dialogue Box</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              Character Manage
-            </li>
-            <li>
-              
             </li>
           </ul>
         </section>

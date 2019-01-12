@@ -1,7 +1,7 @@
 import React from 'react';
 import DialogueContent from './DialogueContent';
-import CharacterImage from './CharacterImage';
-import CharacterName from './CharacterName';
+import CharacterImage from '../Shared/CharacterImage';
+import CharacterName from '../Shared/CharacterName';
 
 // Components should represent one piece of data model
 class DialogueBox extends React.Component {

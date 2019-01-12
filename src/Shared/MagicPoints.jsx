@@ -11,7 +11,8 @@ class MagicPoints extends React.Component {
     return (
       <div className="magic-points">
         <span>MP</span>
-        <meter min="0" max={mp.max} value={mp.current}></meter>
+        <meter min="0" value={mp.current} max={mp.max}></meter>
+        <span>{mp.current} / {mp.max}</span>
       </div>
     );
   }

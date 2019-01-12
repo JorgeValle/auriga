@@ -1,12 +1,12 @@
 import React from 'react';
-import ChapterNumber from './ChapterNumber';
-import ChapterName from './ChapterName';
-import ChapterDescription from './ChapterDescription';
-import TotalPlayTime from './TotalPlayTime';
-import PartyImages from './PartyImages';
-import CharacterImage from './CharacterImage';
-import CharacterLevel from './CharacterLevel';
-import SaveButtons from './SaveButtons';
+import ChapterNumber from '../Shared/ChapterNumber';
+import ChapterName from '../Shared/ChapterName';
+import ChapterDescription from '../SaveSlot/ChapterDescription';
+import TotalPlayTime from '../SaveSlot/TotalPlayTime';
+import PartyImages from '../Shared/PartyImages';
+import CharacterImage from '../Shared/CharacterImage';
+import CharacterLevel from '../Shared/CharacterLevel';
+import SaveButtons from '../SaveSlot/SaveButtons';
 
 // Components should represent one piece of data model
 class SaveSlot extends React.Component {

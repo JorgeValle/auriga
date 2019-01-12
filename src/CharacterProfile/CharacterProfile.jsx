@@ -1,11 +1,11 @@
 import React from 'react';
-import CharacterImage from './CharacterImage';
-import CharacterName from './CharacterName';
-import CharacterJob from './CharacterJob';
-import CharacterLevel from './CharacterLevel';
-import ExperiencePoints from './ExperiencePoints';
-import HitPoints from './HitPoints';
-import MagicPoints from './MagicPoints';
+import CharacterImage from '../Shared/CharacterImage';
+import CharacterName from '../Shared/CharacterName';
+import CharacterJob from '../Shared/CharacterJob';
+import CharacterLevel from '../Shared/CharacterLevel';
+import ExperiencePoints from '../Shared/ExperiencePoints';
+import HitPoints from '../Shared/HitPoints';
+import MagicPoints from '../Shared/MagicPoints';
 
 // Components should represent one piece of data model
 class CharacterProfile extends React.Component {

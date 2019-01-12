@@ -9,7 +9,8 @@ class HitPoints extends React.Component {
     return (
       <div className="hit-points">
         <span>HP</span>
-        <meter min="0" max={hp.max} value={hp.current}></meter>
+        <meter min="0"  value={hp.current} max={hp.max}></meter>
+        <span>{hp.current} / {hp.max}</span>
       </div>
     );
   }
