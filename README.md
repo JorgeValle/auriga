@@ -10,6 +10,10 @@ It's inspired by a lot of older games, but it's built using pretty modern CSS te
 
 Euler's Quest is a React(v.16) app that is styled mostly with CSS grid. As a playful and frontline project, I was unconcerned with making it compatible with most browser, although [CSS grid support is improving](https://caniuse.com/#feat=css-grid).
 
+## Contributing
+
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 ## Running the project
 
 Download the source, navigate to the root, and start the React app as you normally would.
