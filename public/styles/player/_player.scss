@@ -51,6 +51,9 @@
     .player-image {
       grid-column: 1;
       grid-row: 1 / span 5;
+
+      // Padding
+      padding-right: $base-unit * fibonacci(8);
     }
   
     .player-name {

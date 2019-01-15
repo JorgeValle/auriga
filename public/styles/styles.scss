@@ -27,14 +27,13 @@
 @import 'pieces/rook';
 
 // Save slot
-@import 'save-slot/chapter-description';
-@import 'save-slot/chapter-number';
 @import 'save-slot/total-play-time';
 @import 'save-slot/save-slot';
+@import 'save-slot/save-buttons';
 
 // Message box
 @import 'message-box/message-box';
 
-
 // Chessboard
 @import 'chessboard/chessboard';
+@import 'chessboard/coordinates';

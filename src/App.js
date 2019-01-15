@@ -8,6 +8,7 @@ import Chessboard from './Chessboard/Chessboard';
 import Player from './Player/Player';
 import MessageBox from './MessageBox/MessageBox';
 import SaveSlot from './SaveSlot/SaveSlot';
+import GameView from './Views/GameView';
 
 const PLAYERS = [
   {
@@ -68,6 +69,9 @@ function App() {
             <li>
               <Link to="/message-box">Message Box</Link>
             </li>
+            <li>
+              <Link to="/game-view">Game View</Link>
+            </li>
           </ul>
         </section>
         
@@ -75,6 +79,7 @@ function App() {
         <Route path="/player" render={(props) => <Player {...props} player={PLAYERS[0]} />} />
         <Route path="/save-slot" render={(props) => <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />} />
         <Route path="/message-box" render={(props) => <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
+        <Route path="/game-view" render={(props) => <GameView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
 
       </main>
     </Router>

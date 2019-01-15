@@ -175,6 +175,7 @@ button {
   .player .player-image {
     grid-column: 1;
     grid-row: 1/span 5;
+    padding-right: 34px;
   }
   .player .player-name {
     grid-column: 2;
@@ -192,13 +193,6 @@ button {
     padding-top: 5px;
   }
 }
-.chapter-number {
-  font-family: "Lora", serif;
-  font-size: 2em;
-  font-weight: 700;
-  color: #000000;
-}
-
 .total-play-time {
   font-family: "Lora", serif;
   font-size: 1.6em;
@@ -213,24 +207,13 @@ button {
   padding: 34px;
   border: 1px solid #e3e3e3;
 }
-.save-slot .character-image {
+.save-slot .player-image {
   grid-column: 1;
   grid-row: 1;
 }
-.save-slot .party-images {
-  grid-column: 1;
-  grid-row: 2;
-  padding-top: 8px;
-}
-.save-slot .chapter {
-  grid-column: 1;
-  grid-row: 3;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
 .save-slot .total-play-time {
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 2;
 }
 @media screen and (min-width: 800px) {
   .save-slot {
@@ -300,9 +283,19 @@ button {
     grid-row: 2;
   }
 }
-.chessboard {
-  height: 500px;
-  width: 500px;
+.chessboard .black {
+  display: inline-block;
+  background-color: #000000;
+  width: 98px;
+  height: 98px;
+  border: 1px solid #000000;
+}
+.chessboard .white {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 98px;
+  height: 98px;
+  border: 1px solid #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,22 @@ class Chessboard extends React.Component {
   render() {
     return (
       <main className="chessboard">
-        <p>Chessboard</p>
+        <div className="white">
+        </div>
+        <div className="black">
+        </div>
+        <div className="white">
+        </div>
+        <div className="black">
+        </div>
+        <div className="white">
+        </div>
+        <div className="black">
+        </div>
+        <div className="white">
+        </div>
+        <div className="black">
+        </div>
       </main>
     );
   }

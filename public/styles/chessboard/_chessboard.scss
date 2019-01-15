@@ -1,4 +1,21 @@
 .chessboard {
-  height: 500px;
-  width: 500px;
+
+
+  .black {
+    display: inline-block;
+    background-color: $black;
+    width: 98px;
+    height: 98px;
+    border: 1px solid $black;
+  }
+
+  .white {
+    display: inline-block;
+    background-color: $white;
+    width: 98px;
+    height: 98px;
+    border: 1px solid $black;
+  }
+  
+
 }
