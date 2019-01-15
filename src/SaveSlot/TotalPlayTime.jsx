@@ -7,9 +7,9 @@ class TotalPlayTime extends React.Component {
     const time = this.props.time;
 
     return (
-      <div>
-        <i class="fas fa-chess-stopwatch"></i>
-        <time className="total-play-time">{time.hours}: {time.mins}</time>
+      <div className="total-play-time">
+        <i className="fas fa-stopwatch"></i>
+        <time>{time.hours}: {time.mins}</time>
       </div>
     );
   }

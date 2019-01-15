@@ -13,11 +13,11 @@ class GameView extends React.Component {
   // To make UI interactive, we need to be able to trigger changes to underlying data model
   render() {
     return (
-      <section>
-        <Chessboard />
-        <Player />
-        <MessageBox />
-      </section>
+      <main className="game-view">
+        <Chessboard player={this.props.player} />
+        <Player player={this.props.player} />
+        <MessageBox player={this.props.player} message={this.props.message}/>
+      </main>
     );
   }
 }

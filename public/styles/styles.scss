@@ -32,8 +32,13 @@
 @import 'save-slot/save-buttons';
 
 // Message box
+@import 'message-box/message-content';
+@import 'message-box/message-time';
 @import 'message-box/message-box';
 
 // Chessboard
 @import 'chessboard/chessboard';
 @import 'chessboard/coordinates';
+
+// Views
+@import 'views/game-view';

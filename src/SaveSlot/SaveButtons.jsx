@@ -6,7 +6,7 @@ class SaveButtons extends React.Component {
   render() {
   
     return (
-      <div>
+      <div className="save-buttons">
         <button>Overwrite</button>
         <button>Cancel</button>
       </div>
