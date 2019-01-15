@@ -1,51 +1,40 @@
-// Reset styles
-@import 'reset';
-
-@import 'units';
-@import 'functions';
-@import 'spacing';
-@import 'colors';
-@import 'fonts';
-@import 'borders';
-@import 'backgrounds';
-@import 'buttons';
-@import 'media-breakpoints';
-
-// Main
-@import 'main';
+// Shared
+@import 'shared/reset';
+@import 'shared/units';
+@import 'shared/functions';
+@import 'shared/spacing';
+@import 'shared/colors';
+@import 'shared/fonts';
+@import 'shared/borders';
+@import 'shared/backgrounds';
+@import 'shared/buttons';
+@import 'shared/media-breakpoints';
+@import 'shared/main';
 
 // Player
-@import 'player-name';
-@import 'player-status';
-@import 'player-image';
-@import 'player-health';
+@import 'player/player-name';
+@import 'player/player-status';
+@import 'player/player-image';
+@import 'player/player-health';
+@import 'player/player';
 
 // Pieces
-@import 'bishop';
-@import 'king';
-@import 'knight';
-@import 'pawn';
-@import 'queen';
-@import 'rook';
+@import 'pieces/bishop';
+@import 'pieces/king';
+@import 'pieces/knight';
+@import 'pieces/pawn';
+@import 'pieces/queen';
+@import 'pieces/rook';
 
-// Meters
-@import 'hit-points';
-@import 'magic-points';
-@import 'experience-points';
+// Save slot
+@import 'save-slot/chapter-description';
+@import 'save-slot/chapter-number';
+@import 'save-slot/total-play-time';
+@import 'save-slot/save-slot';
 
-// Chapters
-@import 'chapter-name';
-@import 'chapter-number';
-@import 'chapter-description';
+// Message box
+@import 'message-box/message-box';
 
-// Time
-@import 'total-play-time';
 
-// Components
-@import 'character-profile';
-@import 'character-level-up';
-@import 'dialogue-box';
-@import 'save-slot';
-
-// Party
-@import 'party-images';
+// Chessboard
+@import 'chessboard/chessboard';

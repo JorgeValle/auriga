@@ -1,15 +1,19 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class CharacterJob extends React.Component {
+class PlayerStatus extends React.Component {
   render() {
 
-    const character = this.props.character;
+    const player = this.props.player;
 
     return (
-      <h2 className="character-job">{character.job}</h2>
+      <div className="player-status">
+        <h2>{player.status}</h2>
+        <input type="text" value={player.status} />
+      </div>
+
     );
   }
 }
 
-export default CharacterJob;
+export default PlayerStatus;

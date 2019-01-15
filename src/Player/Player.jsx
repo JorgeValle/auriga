@@ -1,9 +1,10 @@
 import React from 'react';
 
 // Player
-import PlayerImage from './Shared/PlayerImage';
-import PlayerName from './Shared/PlayerName';
+import PlayerImage from '../Shared/PlayerImage';
+import PlayerName from '../Shared/PlayerName';
 import PlayerStatus from './PlayerStatus';
+import PlayerColor from './PlayerColor';
 import PlayerHealth from './PlayerHealth';
 
 // Components should represent one piece of data model
@@ -17,6 +18,7 @@ class Player extends React.Component {
         <PlayerImage player={this.props.player} />
         <PlayerName player={this.props.player} />
         <PlayerStatus player={this.props.player} />
+        <PlayerColor player={this.props.player} />
         <PlayerHealth player={this.props.player} />
       </section>
     );

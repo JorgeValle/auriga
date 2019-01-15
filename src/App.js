@@ -1,116 +1,34 @@
-import React, {Component} from 'react';
+import React, {
+  Component
+} from 'react';
 import {
   BrowserRouter as Router, Route, Link
 } from 'react-router-dom';
-import CharacterProfile from './CharacterProfile/CharacterProfile';
-import CharacterLevelUp from './CharacterLevelUp/CharacterLevelUp';
-import DialogueBox from './DialogueBox/DialogueBox';
+import Chessboard from './Chessboard/Chessboard';
+import Player from './Player/Player';
+import MessageBox from './MessageBox/MessageBox';
 import SaveSlot from './SaveSlot/SaveSlot';
 
-const CHARACTER = {
-  name: 'Delita Heiral',
-  job: 'Arithmetician',
-  image: 'https://placehold.it/144x233',
-  description: 'Sed pellentesque eu purus nec dapibus',
-  stats: {
-    pieces: {
-      current: 10,
-      max: 16
-    },
-    mp: {
-      current: 59,
-      max: 89
-    },
-    xp: {
-      level: 2,
-      current: 1900,
-      max: 2500
-    }
-  }
-};
-
-const PARTY = [
+const PLAYERS = [
   {
-    name: 'Cloud Strife',
-    job: 'Arithmetician',
-    image: 'https://placehold.it/34x55',
-    description: 'Sed pellentesque eu purus nec dapibus',
-    stats: {
-      hp: {
-        current: 80,
-        max: 202
-      },
-      mp: {
-        current: 59,
-        max: 89
-      },
-      xp: {
-        level: 2,
-        current: 2345,
-        next: 2500
-      }
-    }
+    name: 'Delita Heiral',
+    image: 'https://placehold.it/144x233',
+    status: 'Fighting evil',
+    color: 'white'
   },
   {
-    name: 'Ramza Beoulve',
-    job: 'Knight',
-    image: 'https://placehold.it/34x55',
-    description: 'Nulla eros ex, consequat a dapibus',
-    stats: {
-      hp: {
-        current: 202,
-        max: 255
-      },
-      mp: {
-        current: 12,
-        max: 16
-      },
-      xp: {
-        level: 5,
-        current: 222,
-        next: 234
-      }
-    }
-  },
-  {
-    name: 'Agrias',
-    job: 'Holy Knight',
-    image: 'https://placehold.it/34x55',
-    description: 'Morbi tristique nisi lorem, vitae ultrices tellus dapibus et',
-    stats: {
-      hp: {
-        current: 121,
-        max: 167
-      },
-      mp: {
-        current: 144,
-        max: 876
-      },
-      xp: {
-        level: 12,
-        current: 12312,
-        next: 12923,
-      }
-    }
+    name: 'Dycedarg Beoulve',
+    image: 'https://placehold.it/144x233',
+    status: 'Being the bad guy',
+    color: 'black'
   }
 ];
 
-const DIALOGUE = [
-  {
-    value: [
-      'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.',
-      'Morbi at ligula ut orci pharetra interdum nec elementum velit. Suspendisse ac felis odio. Phasellus vestibulum elit quis augue rhoncus convallis.',
-      'Donec libero felis, feugiat eget sapien eget, vehicula vehicula odio. Quisque eu viverra erat. Phasellus sodales nibh ultricies eros sagittis lacinia.'
-    ]
-  }
-];
 
-const CHAPTER = [
-  {
-    name: 'In search of Archimedes',
-    number: 3,
-    description: 'Pellentesque urna mauris, elementum id sapien nec, hendrerit rutrum sem. Phasellus ut justo metus. Ut quis neque sed lacus commodo aliquam.'
-  }
+const MESSAGES = [
+  'Sed pellentesque eu purus nec dapibus. Aenean congue laoreet nibh, id tristique nibh dictum et. Pellentesque sit amet finibus nibh, non blandit mauris.',
+  'Morbi at ligula ut orci pharetra interdum nec elementum velit. Suspendisse ac felis odio. Phasellus vestibulum elit quis augue rhoncus convallis.',
+  'Donec libero felis, feugiat eget sapien eget, vehicula vehicula odio. Quisque eu viverra erat. Phasellus sodales nibh ultricies eros sagittis lacinia.'
 ];
 
 const TIME = [
@@ -120,17 +38,13 @@ const TIME = [
   }
 ]
 
-const ABILITIES = [
-  
-];
-
 function App() {
   return(
     <Router>
       <main className="main">
 
         <div className="masthead">
-          <i class="fas fa-chess-king"></i>
+          <i className="fas fa-chess-king"></i>
           <h1 className="brand">Shah Mat</h1>
         </div>
 
@@ -143,43 +57,28 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/character-profile">Character Profile</Link>
+              <Link to="/chessboard">Chessboard</Link>
             </li>
             <li>
-              <Link to="/character-level-up">Character Level Up</Link>
+              <Link to="/player">Player</Link>
             </li>
             <li>
               <Link to="/save-slot">Save Slot</Link>
             </li>
             <li>
-              <Link to="/dialogue-box">Dialogue Box</Link>
-            </li>
-            <li>
-              <Link to="/chess-mat">Chess Mat</Link>
+              <Link to="/message-box">Message Box</Link>
             </li>
           </ul>
         </section>
         
-{/* 
-        <Route exact path="/" component={Home} /> */}
-        <Route path="/character-profile" render={(props) => <CharacterProfile {...props} character={CHARACTER} />} />
-        <Route path="/character-level-up" render={(props) => <CharacterLevelUp {...props} character={CHARACTER} />} />
-        <Route path="/save-slot" render={(props) => <SaveSlot {...props} character={CHARACTER} party={PARTY} chapter={CHAPTER[0]} time={TIME[0]} />} />
-        <Route path="/dialogue-box" render={(props) => <DialogueBox {...props} character={CHARACTER} dialogue={DIALOGUE[0]} />} />
+        <Route path="/chessboard" render={(props) => <Chessboard {...props} player={PLAYERS[0]} />} />
+        <Route path="/player" render={(props) => <Player {...props} player={PLAYERS[0]} />} />
+        <Route path="/save-slot" render={(props) => <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />} />
+        <Route path="/message-box" render={(props) => <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
 
       </main>
     </Router>
   )
 }
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <DialogueBox dialogue={DIALOGUE} character={CHARACTER} />,
-//       <CharacterProfile character={CHARACTER[1]} />,
-//       <CharacterLevelUp character={CHARACTER[2]} />
-//     );
-//   }
-// }
 
 export default App;

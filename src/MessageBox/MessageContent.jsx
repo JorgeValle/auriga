@@ -1,18 +1,18 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class DialogueContent extends React.Component {
+class MessageContent extends React.Component {
 
 
   render() {
 
-    const dialogue = this.props.dialogue;
+    const message = this.props.message;
 
     const pageNum = this.props.pageNum;
   
     return (
       <div>
-        <p className="dialogue-content">{dialogue.value[pageNum]}</p>
+        <p className="message-content">{message}</p>
         <span>{pageNum}</span>
         <button>Previous</button>
         <button>Next</button>
@@ -23,4 +23,4 @@ class DialogueContent extends React.Component {
   }
 }
 
-export default DialogueContent;
+export default MessageContent;

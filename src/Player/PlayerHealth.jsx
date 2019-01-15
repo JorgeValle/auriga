@@ -1,19 +1,19 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class HitPoints extends React.Component {
+class PlayerHealth extends React.Component {
   render() {
 
-    const pieces = this.props.character.stats.pieces;
+    const player = this.props.player;
 
     return (
-      <div className="hit-points">
+      <div className="player-health">
         <span>Pieces</span>
-        <meter min="0"  value={pieces.current} max={pieces.max}></meter>
-        <span>{pieces.current} / {pieces.max}</span>
+        <meter min="0"  value="13" max="16"></meter>
+        <span>13 / 16</span>
       </div>
     );
   }
 }
 
-export default HitPoints;
+export default PlayerHealth;

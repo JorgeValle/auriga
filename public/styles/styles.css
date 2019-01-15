@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.border-solid {
+  border: 1px solid #e3e3e3;
+}
+
+.border-groove {
+  border: 1px groove #e3e3e3;
+}
+
+.border-double {
+  border: 6px double #e3e3e3;
+}
+
+.mages {
+  background: repeating-linear-gradient(325deg, #ffffff, #ffffff 5px, #8c8c8c 5px, #8c8c8c 8px);
+  /* End color */
+  background-size: 100%;
+  height: 233px;
+}
+
+.loyalists {
+  background-color: #ffffff;
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-image: -webkit-linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c), -webkit-linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c);
+  background-image: -moz-linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c), -moz-linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c);
+  background-image: linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c), linear-gradient(45deg, #8c8c8c 25%, transparent 25%, transparent 75%, #8c8c8c 75%, #8c8c8c);
+  height: 233px;
+}
+
+button {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  padding: 13px;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 89%;
+  padding-bottom: 34px;
+}
+.main .masthead {
+  margin-top: 34px;
+}
+.main .fa-chess-king {
+  font-size: 3em;
+  padding-right: 13px;
+  vertical-align: baseline;
+}
+.main .brand {
+  display: inline;
+  font-family: "Lora", serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #000000;
+}
+.main .intro {
+  margin-top: 34px;
+}
+.main .intro p {
+  padding-bottom: 13px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.main .intro ul {
+  margin-top: 21px;
+  margin-bottom: 34px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.player-name {
+  font-family: "Lora", serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.player-status {
+  font-family: "Lora", serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #575757;
+}
+
+.player {
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
+}
+.player .player-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+.player .player-name {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 13px;
+}
+.player .player-status {
+  grid-column: 1;
+  grid-row: 3;
+  padding-top: 8px;
+}
+.player .player-color {
+  grid-column: 1;
+  grid-row: 4;
+  padding-top: 5px;
+}
+@media screen and (min-width: 800px) {
+  .player {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .player .player-image {
+    grid-column: 1;
+    grid-row: 1/span 5;
+  }
+  .player .player-name {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+  .player .player-status {
+    grid-column: 2;
+    grid-row: 2;
+    padding-top: 8px;
+  }
+  .player .player-color {
+    grid-column: 2;
+    grid-row: 3;
+    padding-top: 5px;
+  }
+}
+.chapter-number {
+  font-family: "Lora", serif;
+  font-size: 2em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.total-play-time {
+  font-family: "Lora", serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #575757;
+}
+
+.save-slot {
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
+}
+.save-slot .character-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+.save-slot .party-images {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 8px;
+}
+.save-slot .chapter {
+  grid-column: 1;
+  grid-row: 3;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.save-slot .total-play-time {
+  grid-column: 1;
+  grid-row: 4;
+}
+@media screen and (min-width: 800px) {
+  .save-slot {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+  .save-slot .character-image {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .save-slot .party-images {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .save-slot .chapter {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+  .save-slot .character-level {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+.message-box {
+  display: grid !important;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  padding: 34px;
+  border: 1px solid #e3e3e3;
+}
+.message-box .player-image {
+  grid-column: 1;
+  grid-row: 1;
+}
+.message-box .player-name {
+  grid-column: 1;
+  grid-row: 2;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.message-box .message-content {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 1.5em;
+  padding-bottom: 13px;
+}
+@media screen and (min-width: 800px) {
+  .message-box {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .message-box .player-image {
+    grid-column: 1;
+    grid-row: 1/span 2;
+    padding-right: 34px;
+  }
+  .message-box .player-name {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 0;
+  }
+  .message-box .message-content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+.chessboard {
+  height: 500px;
+  width: 500px;
+}
+
+/*# sourceMappingURL=styles.css.map */

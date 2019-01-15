@@ -1,15 +1,15 @@
 import React from 'react';
 
 // Components should represent one piece of data model
-class CharacterImage extends React.Component {
+class PlayerImage extends React.Component {
   render() {
 
-    const character = this.props.character;
+    const player = this.props.player;
 
     return (
-      <img className="character-image" src={character.image} alt={character.description} title={character.description} />
+      <img className="player-image" src={player.image} alt={player.status} title={player.status} />
     );
   }
 }
 
-export default CharacterImage;
+export default PlayerImage;

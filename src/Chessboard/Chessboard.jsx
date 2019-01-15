@@ -8,16 +8,7 @@ class Chessboard extends React.Component {
   render() {
     return (
       <main className="chessboard">
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
-        <Row></Row>
+        <p>Chessboard</p>
       </main>
     );
   }
