@@ -9,7 +9,7 @@
 @import 'shared/backgrounds';
 @import 'shared/buttons';
 @import 'shared/media-breakpoints';
-@import 'shared/main';
+@import 'shared/body';
 
 // Player
 @import 'player/player-name';
@@ -40,5 +40,8 @@
 @import 'chessboard/chessboard';
 @import 'chessboard/coordinates';
 
+// Header
+@import 'header/header';
+
 // Views
-@import 'views/game-view';
+@import 'views/play-view';

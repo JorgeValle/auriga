@@ -1,0 +1,14 @@
+.header {
+  
+  background-color: $black;
+  color: $white;
+
+  .brand {
+    font-size: 1.7em;
+    font-family: $title-font;
+
+    // Margin
+    margin-bottom: $base-unit * fibonacci(5);
+  }
+
+}

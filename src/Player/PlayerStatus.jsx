@@ -9,7 +9,7 @@ class PlayerStatus extends React.Component {
     return (
       <div className="player-status">
         <h2>{player.status}</h2>
-        <input type="text" value={player.status} />
+        {/* <input type="text" value={player.status} /> */}
       </div>
 
     );

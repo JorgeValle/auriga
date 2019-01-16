@@ -1,20 +1,19 @@
 .chessboard {
 
-
   .black {
     display: inline-block;
     background-color: $black;
-    width: 98px;
-    height: 98px;
-    border: 1px solid $black;
+    width: 12.5%;
+    height: 12.5%;
+    // border: 1px solid $black;
   }
 
   .white {
     display: inline-block;
     background-color: $white;
-    width: 98px;
-    height: 98px;
-    border: 1px solid $black;
+    width: 12.5%;
+    height: 12.5%;
+    // border: 1px solid $black;
   }
   
 

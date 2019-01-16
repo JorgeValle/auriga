@@ -7,24 +7,9 @@ class Chessboard extends React.Component {
   // To make UI interactive, we need to be able to trigger changes to underlying data model
   render() {
     return (
-      <main className="chessboard">
-        <div className="white">
-        </div>
-        <div className="black">
-        </div>
-        <div className="white">
-        </div>
-        <div className="black">
-        </div>
-        <div className="white">
-        </div>
-        <div className="black">
-        </div>
-        <div className="white">
-        </div>
-        <div className="black">
-        </div>
-      </main>
+      <section className="chessboard">
+        <p>Chessboard</p>
+      </section>
     );
   }
 }

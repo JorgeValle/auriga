@@ -7,6 +7,9 @@ import PlayerStatus from './PlayerStatus';
 import PlayerColor from './PlayerColor';
 import PlayerHealth from './PlayerHealth';
 
+import Rook from '../Pieces/Rook';
+import Bishop from '../Pieces/Bishop';
+
 // Components should represent one piece of data model
 class Player extends React.Component {
 
