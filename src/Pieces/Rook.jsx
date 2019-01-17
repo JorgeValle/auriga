@@ -6,7 +6,7 @@ class Rook extends React.Component {
   render() {
   
     return (
-      <i class="fas fa-chess-rook"></i>
+      <i className="fas fa-chess-rook"></i>
     );
   }
 }

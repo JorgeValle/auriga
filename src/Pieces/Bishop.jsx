@@ -6,7 +6,7 @@ class Bishop extends React.Component {
   render() {
   
     return (
-      <i class="fas fa-chess-bishop"></i>
+      <i className="fas fa-chess-bishop"></i>
     );
   }
 }

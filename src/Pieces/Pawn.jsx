@@ -6,7 +6,7 @@ class Pawn extends React.Component {
   render() {
   
     return (
-      <i class="fas fa-chess-pawn"></i>
+      <i className="fas fa-chess-pawn"></i>
     );
   }
 }

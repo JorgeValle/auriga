@@ -6,7 +6,7 @@ class Queen extends React.Component {
   render() {
   
     return (
-      <i class="fas fa-chess-queen"></i>
+      <i className="fas fa-chess-queen"></i>
     );
   }
 }

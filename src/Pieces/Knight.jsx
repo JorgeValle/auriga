@@ -6,7 +6,7 @@ class Knight extends React.Component {
   render() {
   
     return (
-      <i class="fas fa-chess-knight"></i>
+      <i className="fas fa-chess-knight"></i>
     );
   }
 }

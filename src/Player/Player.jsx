@@ -5,7 +5,7 @@ import PlayerImage from '../Shared/PlayerImage';
 import PlayerName from '../Shared/PlayerName';
 import PlayerStatus from './PlayerStatus';
 import PlayerColor from './PlayerColor';
-import PlayerHealth from './PlayerHealth';
+import PlayerMaterial from './PlayerMaterial';
 
 import Rook from '../Pieces/Rook';
 import Bishop from '../Pieces/Bishop';
@@ -18,11 +18,11 @@ class Player extends React.Component {
   render() {
     return (
       <section className="player">
-        <PlayerImage player={this.props.player} />
+        {/* <PlayerImage player={this.props.player} /> */}
         <PlayerName player={this.props.player} />
         <PlayerStatus player={this.props.player} />
         <PlayerColor player={this.props.player} />
-        <PlayerHealth player={this.props.player} />
+        <PlayerMaterial player={this.props.player} />
       </section>
     );
   }

@@ -4,11 +4,38 @@
   color: $white;
 
   .brand {
-    font-size: 1.7em;
+    font-size: 2.1em;
     font-family: $title-font;
 
     // Margin
     margin-bottom: $base-unit * fibonacci(5);
+  }
+
+  .tagline {
+    font-style: italic;
+  }
+
+  nav {
+    margin-top: $base-unit * fibonacci(7);
+
+    ul {
+
+      li {
+        padding-top: $base-unit * fibonacci(4);
+        padding-right: $base-unit * fibonacci(4);
+      }
+
+      ul {
+
+        li {
+          padding-left: $base-unit * fibonacci(4);
+        }
+      }
+    }
+
+    a {
+      color: $white;
+    }
   }
 
 }

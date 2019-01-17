@@ -40,21 +40,49 @@ const TIME = [
   }
 ]
 
+const PIECES = [
+  {
+    name: 'King',
+    value: 100
+  },
+  {
+    name: 'Queen',
+    value: 9
+  },
+  {
+    name: 'Rook',
+    value: 5
+  },
+  {
+    name: 'Bishop',
+    value: 3
+  },
+  {
+    name: 'Knight',
+    value: 3
+  },
+  {
+    name: 'Pawn',
+    value: 1
+  }
+];
+
+
+
 function App() {
   return(
-
-    <div className="body">
-      <Header />
-      <Router>        
-        <main className="main">          
-          <Route path="/chessboard" render={(props) => <Chessboard {...props} player={PLAYERS[0]} />} />
-          <Route path="/player" render={(props) => <Player {...props} player={PLAYERS[0]} />} />
-          <Route path="/save-slot" render={(props) => <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />} />
-          <Route path="/message-box" render={(props) => <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
-          <Route path="/play" render={(props) => <PlayView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
-        </main>
-      </Router>
-    </div>
+    <Router>   
+      <div className="body">
+        <Header />
+          <main className="main">          
+            <Route path="/chessboard" render={(props) => <Chessboard {...props} player={PLAYERS[0]} />} />
+            <Route path="/player" render={(props) => <Player {...props} player={PLAYERS[0]} />} />
+            <Route path="/save-slot" render={(props) => <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />} />
+            <Route path="/message-box" render={(props) => <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
+            <Route path="/play" render={(props) => <PlayView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
+          </main>
+      </div>
+    </Router>
   )
 }
 

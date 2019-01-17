@@ -7,18 +7,18 @@ import Rook from '../Pieces/Rook';
 import Pawn from '../Pieces/Pawn';
 
 // Components should represent one piece of data model
-class PlayerHealth extends React.Component {
+class PlayerMaterial extends React.Component {
   render() {
 
     const player = this.props.player;
 
     return (
-      <div className="player-health">
+      <div className="player-material">
         <span>Pieces</span>
         <meter min="0"  value="13" max="16"></meter>
         <span>13 / 16</span>
   
-        <div className="player-barracks">
+        <div>
           <King />
           <Queen />
           <Bishop />
@@ -31,4 +31,4 @@ class PlayerHealth extends React.Component {
   }
 }
 
-export default PlayerHealth;
+export default PlayerMaterial;
