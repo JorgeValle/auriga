@@ -13,10 +13,11 @@ class MessageContent extends React.Component {
     return (
       <div>
         <p className="message-content">{message}</p>
-        <span>{pageNum}</span>
+        {/* <span>{pageNum}</span> */}
+        <button>First</button>
         <button>Previous</button>
         <button>Next</button>
-        <button>End</button>
+        <button>Latest</button>
       </div>
 
     );

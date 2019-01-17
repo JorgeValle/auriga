@@ -13,9 +13,19 @@
 
   .tagline {
     font-style: italic;
+
+    // Margin
+    margin-bottom: $base-unit * fibonacci(6);
+  }
+
+  .version {
+
+
   }
 
   nav {
+
+    // Margin
     margin-top: $base-unit * fibonacci(7);
 
     ul {

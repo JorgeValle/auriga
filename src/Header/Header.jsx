@@ -10,8 +10,13 @@ class Header extends React.Component {
     return (
       <header className="header">
         {/* <i className="fas fa-chess-king"></i> */}
-        <h1 className="brand">Endgame</h1>
+        <h1 className="brand">
+          Endgame
+        </h1>
         <p className="tagline">A chess app.</p>
+        <span className="version">
+          <i className="fas fa-code-branch"></i> Alpha
+        </span>
         <nav>
           <ul>
             <li>
