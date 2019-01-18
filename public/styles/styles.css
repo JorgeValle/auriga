@@ -154,11 +154,11 @@ button:hover {
   color: #575757;
 }
 
-.player-health .player-barracks .fa-chess-king,
-.player-health .player-barracks .fa-chess-queen,
-.player-health .player-barracks .fa-chess-bishop,
-.player-health .player-barracks .fa-chess-rook,
-.player-health .player-barracks .fa-chess-pawn {
+.player-material .piece-count .fa-chess-king,
+.player-material .piece-count .fa-chess-queen,
+.player-material .piece-count .fa-chess-bishop,
+.player-material .piece-count .fa-chess-rook,
+.player-material .piece-count .fa-chess-pawn {
   font-size: 1.3em;
 }
 
@@ -169,24 +169,24 @@ button:hover {
   padding: 34px;
   border: 1px solid #e3e3e3;
 }
-.player .player-image {
+.player .player-name {
   grid-column: 1;
   grid-row: 1;
 }
-.player .player-name {
-  grid-column: 1;
-  grid-row: 2;
-  padding-top: 13px;
-}
 .player .player-status {
   grid-column: 1;
-  grid-row: 3;
-  padding-top: 8px;
+  grid-row: 2;
+  margin-top: 13px;
 }
 .player .player-color {
   grid-column: 1;
+  grid-row: 3;
+  margin-top: 13px;
+}
+.player .player-material {
+  grid-column: 1;
   grid-row: 4;
-  padding-top: 5px;
+  margin-top: 13px;
 }
 .file-number {
   font-size: 1.2em;
