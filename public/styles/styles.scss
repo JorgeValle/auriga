@@ -27,7 +27,9 @@
 @import 'pieces/rook';
 
 // Save slot
+@import 'save-slot/file-number';
 @import 'save-slot/total-play-time';
+@import 'save-slot/save-date';
 @import 'save-slot/save-slot';
 @import 'save-slot/save-buttons';
 

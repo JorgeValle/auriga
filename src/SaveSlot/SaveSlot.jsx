@@ -1,6 +1,7 @@
 import React from 'react';
-import PlayerImage from '../Shared/PlayerImage';
+import FileNumber from './FileNumber';
 import PlayerName from '../Shared/PlayerName';
+import SaveDate from './SaveDate';
 import TotalPlayTime from '../SaveSlot/TotalPlayTime';
 import SaveButtons from '../SaveSlot/SaveButtons';
 
@@ -9,8 +10,9 @@ class SaveSlot extends React.Component {
   render() {
     return (
       <section className="save-slot">
-        <PlayerImage player={this.props.player} />
+        <FileNumber />
         <PlayerName player={this.props.player} />
+        <SaveDate />
         <TotalPlayTime time={this.props.time} />
         <SaveButtons />
       </section>

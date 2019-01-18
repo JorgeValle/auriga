@@ -8,8 +8,8 @@ class TotalPlayTime extends React.Component {
 
     return (
       <div className="total-play-time">
-        <i className="fas fa-stopwatch"></i>
-        <time>{time.hours}: {time.mins}</time>
+        {/* <i className="fas fa-stopwatch"></i> */}
+        <span>Time: <time>{time.hours}' {time.mins}' 33</time></span>
       </div>
     );
   }

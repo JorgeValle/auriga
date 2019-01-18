@@ -7,4 +7,13 @@ button {
   font-size: 0.9em;
   padding: $base-unit * fibonacci(6);
 
+  // Transitions
+  transition-duration: 0.4s;
+
+  // Hover
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+
 }
