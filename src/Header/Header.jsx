@@ -34,6 +34,9 @@ class Header extends React.Component {
                 <li>
                   <Link to="/message-box">Message Box</Link>
                 </li>
+                <li>
+                  <Link to="/move-list">Move List</Link>
+                </li>
               </ul>
             </li>
           </ul>

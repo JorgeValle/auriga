@@ -40,7 +40,10 @@
 
 // Chessboard
 @import 'chessboard/chessboard';
-@import 'chessboard/coordinates';
+
+// Coordinates
+@import 'coordinates/files';
+@import 'coordinates/ranks';
 
 // Header
 @import 'header/header';

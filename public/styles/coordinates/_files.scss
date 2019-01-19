@@ -1,0 +1,15 @@
+.files {
+  
+  max-width: 100%;
+
+  // Letters
+  .file {
+    width: 12.5%;
+    display: inline-block;
+
+    .file-letter {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

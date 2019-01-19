@@ -1,0 +1,14 @@
+.ranks {
+  
+  max-height: 100%;
+
+  // Numbers
+  .rank {
+    height: 12.5%;
+    display: block;
+
+    .rank-number {
+      margin: auto 0;
+    }
+  }
+}
