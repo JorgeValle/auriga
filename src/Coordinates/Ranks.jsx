@@ -7,7 +7,7 @@ class Ranks extends React.Component {
   // To make UI interactive, we need to be able to trigger changes to underlying data model
   render() {
     return (
-      <section className="ranks">
+      <div className="ranks">
         <div className="rank">
           <span className="rank-letter">1</span>
         </div>
@@ -32,7 +32,7 @@ class Ranks extends React.Component {
         <div className="rank">
           <span className="rank-letter">8</span>
         </div>
-      </section>
+      </div>
     );
   }
 }

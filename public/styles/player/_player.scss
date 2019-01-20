@@ -11,6 +11,16 @@
   // Borders
   border: 1px solid $lightest-grey;
 
+  // Position
+  position: relative;
+
+  .player-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   .player-name {
     grid-column: 1;
     grid-row: 1;
@@ -19,14 +29,6 @@
   .player-status {
     grid-column: 1;
     grid-row: 2;
-
-    // Margin
-    margin-top: $base-unit * fibonacci(6);
-  }
-
-  .player-color {
-    grid-column: 1;
-    grid-row: 3;
 
     // Margin
     margin-top: $base-unit * fibonacci(6);

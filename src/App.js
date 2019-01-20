@@ -9,6 +9,7 @@ import Chessboard from './Chessboard/Chessboard';
 import Player from './Player/Player';
 import MessageBox from './MessageBox/MessageBox';
 import SaveSlot from './SaveSlot/SaveSlot';
+import MoveList from './Moves/MoveList';
 import PlayView from './Views/PlayView';
 
 const PLAYERS = [
@@ -37,6 +38,14 @@ const TIME = [
   {
     hours: 14,
     mins: 32
+  },
+  {
+    hours: 9,
+    mins: 12
+  },
+  {
+    hours: 44,
+    mins: 1
   }
 ]
 
@@ -67,19 +76,49 @@ const PIECES = [
   }
 ];
 
-
-
 function App() {
   return(
     <Router>   
       <div className="body">
         <Header />
-          <main className="main">          
-            <Route path="/chessboard" render={(props) => <Chessboard {...props} player={PLAYERS[0]} />} />
-            <Route path="/player" render={(props) => <Player {...props} player={PLAYERS[0]} />} />
-            <Route path="/save-slot" render={(props) => <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />} />
-            <Route path="/message-box" render={(props) => <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
-            <Route path="/play" render={(props) => <PlayView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />} />
+          <main className="main">
+            {/* Chessboard */}
+            <Route path="/chessboard" render={(props) =>
+              <Chessboard {...props} player={PLAYERS[0]} />
+            } />
+            {/* Player */}
+            <Route path="/player" render={(props) =>
+              <div>
+                <Player {...props} player={PLAYERS[0]} />
+                <Player {...props} player={PLAYERS[1]} />
+              </div>
+            } />
+            {/* Save slot */}
+            <Route path="/save-slot" render={(props) =>
+              <div>
+                <SaveSlot {...props} player={PLAYERS[0]} time={TIME[0]} />
+                <SaveSlot {...props} player={PLAYERS[0]} time={TIME[1]} />
+                <SaveSlot {...props} player={PLAYERS[0]} time={TIME[2]} />
+              </div>
+            } />
+            {/* Message box */}
+            <Route path="/message-box" render={(props) =>
+              <div>
+                <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />
+                {/* <MessageBox {...props} player={PLAYERS[1]} message={MESSAGES[1]} />
+                <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[2]} /> */}
+              </div>
+            } />
+            {/* Move list*/}
+            <Route path="/move-list" render={(props) =>
+              <div>
+                <MoveList />
+              </div>
+            } />
+            {/* Play view */}
+            <Route path="/play" render={(props) =>
+              <PlayView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />
+            } />
           </main>
       </div>
     </Router>

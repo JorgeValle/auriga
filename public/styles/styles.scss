@@ -16,6 +16,7 @@
 @import 'player/player-status';
 @import 'player/player-image';
 @import 'player/player-material';
+@import 'player/player-color';
 @import 'player/player';
 
 // Pieces
@@ -32,6 +33,9 @@
 @import 'save-slot/save-date';
 @import 'save-slot/save-slot';
 @import 'save-slot/save-buttons';
+
+// Moves
+@import 'moves/move-list';
 
 // Message box
 @import 'message-box/message-content';

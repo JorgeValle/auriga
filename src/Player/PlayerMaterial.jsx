@@ -15,7 +15,9 @@ class PlayerMaterial extends React.Component {
 
     return (
       <div className="player-material">
-        <h3>Material</h3>
+        <h3>
+          <i className="fas fa-dot-circle"></i>&nbsp;Material
+        </h3>
         <meter min="0"  value="13" max="16"></meter>
         <span>13 / 16</span>
         <div className="piece-count">

@@ -39,6 +39,10 @@
 
         li {
           padding-left: $base-unit * fibonacci(4);
+
+          a {
+            color: $light-grey;
+          }
         }
       }
     }

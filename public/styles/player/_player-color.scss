@@ -1,0 +1,19 @@
+.player-color {
+  // background-color: $light-grey;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 0;
+  border-color: #007bff transparent transparent transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .fa-flag {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,5 +1,10 @@
 .player-material {
 
+  background-color: $lightest-grey;
+
+  // Padding
+  padding: $base-unit * fibonacci(5);
+
   meter {
     // -webkit-appearance: none; /* Reset appearance */
     // border: 1px solid $light-grey;

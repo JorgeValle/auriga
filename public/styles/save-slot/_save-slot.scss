@@ -11,14 +11,18 @@
   // Borders
   border: 1px solid $lightest-grey;
 
+  // Position
+  position: relative;
+
   .file-number {
-    grid-column: 1 / span 2;
-    grid-row: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .player-name {
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: 1;
 
     // Padding
     margin-top: $base-unit * fibonacci(6);
@@ -26,7 +30,7 @@
 
   .save-date {
     grid-column: 1 / span 2;
-    grid-row: 3;
+    grid-row: 2;
 
     // Padding
     margin-top: $base-unit * fibonacci(6);
@@ -34,7 +38,7 @@
 
   .total-play-time {
     grid-column: 1 / span 2;
-    grid-row: 4;
+    grid-row: 3;
 
     // Padding
     margin-top: $base-unit * fibonacci(6);
@@ -42,7 +46,7 @@
 
   .save-buttons {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 4;
 
     // Padding
     margin-top: $base-unit * fibonacci(8);

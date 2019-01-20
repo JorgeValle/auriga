@@ -9,7 +9,7 @@ class FileNumber extends React.Component {
     return (
       <span className="file-number">
         <i className="fas fa-save"></i>
-        &nbsp;File 1
+        &nbsp;1
       </span>
     );
   }

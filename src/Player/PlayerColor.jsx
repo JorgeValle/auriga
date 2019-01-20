@@ -9,7 +9,7 @@ class PlayerColor extends React.Component {
     return (
       <div className="player-color">
         <i className="fas fa-flag"></i>
-        <span className={player.color}>{player.color}</span>
+        {/* <span className={player.color}>{player.color}</span> */}
       </div>
     );
   }

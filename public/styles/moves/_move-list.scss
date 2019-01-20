@@ -1,0 +1,14 @@
+.move-list {
+
+  width: 100%;
+  border-collapse: collapse;
+
+  tr,
+  td {
+    border-top: 1px solid $lightest-grey;
+
+    // Padding
+    padding: $base-unit * fibonacci(4);
+  }
+
+}

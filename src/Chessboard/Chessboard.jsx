@@ -12,9 +12,9 @@ class Chessboard extends React.Component {
       <div className="chessboard-container">
         <Files />
         <Ranks />
-        <section className="chessboard">
+        <div className="chessboard">
           {/*Rank 1*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="white"></div>
             <div className="black"></div>
             <div className="white"></div>
@@ -25,7 +25,7 @@ class Chessboard extends React.Component {
             <div className="black"></div>
           </div>
           {/*Rank 2*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="black"></div>
             <div className="white"></div>
             <div className="black"></div>
@@ -36,7 +36,7 @@ class Chessboard extends React.Component {
             <div className="white"></div>
           </div>
           {/*Rank 3*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="white"></div>
             <div className="black"></div>
             <div className="white"></div>
@@ -47,7 +47,7 @@ class Chessboard extends React.Component {
             <div className="black"></div>
           </div>
           {/*Rank 4*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="black"></div>
             <div className="white"></div>
             <div className="black"></div>
@@ -58,7 +58,7 @@ class Chessboard extends React.Component {
             <div className="white"></div>
           </div>
           {/*Rank 5*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="white"></div>
             <div className="black"></div>
             <div className="white"></div>
@@ -69,7 +69,7 @@ class Chessboard extends React.Component {
             <div className="black"></div>
           </div>
           {/*Rank 6*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="black"></div>
             <div className="white"></div>
             <div className="black"></div>
@@ -80,7 +80,7 @@ class Chessboard extends React.Component {
             <div className="white"></div>
           </div>
           {/*Rank 7*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="white"></div>
             <div className="black"></div>
             <div className="white"></div>
@@ -91,7 +91,7 @@ class Chessboard extends React.Component {
             <div className="black"></div>
           </div>
           {/*Rank 8*/}
-          <div className="rank-row">
+          <div className="row">
             <div className="black"></div>
             <div className="white"></div>
             <div className="black"></div>
@@ -101,7 +101,7 @@ class Chessboard extends React.Component {
             <div className="black"></div>
             <div className="white"></div>
           </div>
-        </section>
+        </div>
       </div>
     );
   }

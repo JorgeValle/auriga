@@ -19,9 +19,9 @@ class Player extends React.Component {
     return (
       <section className="player">
         {/* <PlayerImage player={this.props.player} /> */}
+        <PlayerColor player={this.props.player} />
         <PlayerName player={this.props.player} />
         <PlayerStatus player={this.props.player} />
-        <PlayerColor player={this.props.player} />
         <PlayerMaterial player={this.props.player} />
       </section>
     );
