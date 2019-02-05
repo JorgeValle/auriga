@@ -3,6 +3,7 @@
   background-color: $black;
   color: $white;
 
+  // Brand
   .brand {
     font-size: 2.1em;
     font-family: $title-font;
@@ -11,6 +12,7 @@
     margin-bottom: $base-unit * fibonacci(5);
   }
 
+  // Tagline
   .tagline {
     font-style: italic;
 
@@ -18,15 +20,20 @@
     margin-bottom: $base-unit * fibonacci(6);
   }
 
+  // Version number
   .version {
 
 
   }
 
-  nav {
+  // Main menu
+  nav.main-menu {
 
     // Margin
     margin-top: $base-unit * fibonacci(7);
+
+    // Padding
+    padding-bottom: $base-unit * fibonacci(6);
 
     ul {
 
@@ -50,6 +57,29 @@
     a {
       color: $white;
     }
+  }
+
+  // User menu
+  nav.user-menu {
+
+    // Grid
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    // Margin
+    margin-top: $base-unit * fibonacci(6);
+
+    .user {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .sign-out {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
   }
 
 }

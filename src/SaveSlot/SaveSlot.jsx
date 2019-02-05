@@ -10,7 +10,7 @@ class SaveSlot extends React.Component {
   render() {
     return (
       <section className="save-slot">
-        <FileNumber />
+        {/* <FileNumber /> */}
         <PlayerName player={this.props.player} />
         <SaveDate />
         <TotalPlayTime time={this.props.time} />

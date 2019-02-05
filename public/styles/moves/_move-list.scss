@@ -3,12 +3,39 @@
   width: 100%;
   border-collapse: collapse;
 
-  tr,
+  // Margin
+  margin-bottom: $base-unit * fibonacci(4);
+
+  // Table cells
   td {
-    border-top: 1px solid $lightest-grey;
+
+  }
+
+  // Table headers
+  th {
 
     // Padding
-    padding: $base-unit * fibonacci(4);
+    padding-top: $base-unit * fibonacci(5);
+    padding-bottom: $base-unit * fibonacci(5);
+  }
+
+  // Table rows
+  tr {
+    border-top: 1px solid $lightest-grey;
+  }
+
+  .grey {
+    background-color: $lightest-grey;
+  }
+
+  .black {
+    background-color: $black;
+    color: $white;
+  }
+
+  .white {
+    background-color: $white;
+    color: $black;
   }
 
 }

@@ -1,19 +1,41 @@
 .player-color {
   // background-color: $light-grey;
 
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 50px 0 0;
-  border-color: #007bff transparent transparent transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
+  // width: 0;
+  // height: 0;
+  // border-style: solid;
+  // border-width: 50px 50px 0 0;
+  // border-color: $light-grey transparent transparent transparent;
+
+  // z-index: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  // position: absolute;
+  // top: 0;
+  right: auto;
+  // left: 0;
+  margin: 0;
+  padding: 0;
+  border-color: red;
+  background-color: red;
+  width: $base-unit * fibonacci(7);
+  height: $base-unit * fibonacci(7);
+  z-index: 1;
+  -webkit-transition: border-color .1s ease;
+  transition: border-color .1s ease;
 
   .fa-flag {
-    z-index: 1;
+    // z-index: 1;
+    // position: relative;
+    // top: 0;
+    // left: 0;
+    cursor: default;
     position: relative;
     top: 0;
     left: 0;
+    font-size: 0.7em;
+    margin: 0;
   }
 }

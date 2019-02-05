@@ -155,7 +155,6 @@ button:hover {
 }
 
 .player-material {
-  background-color: #e3e3e3;
   padding: 8px;
 }
 .player-material .piece-count .fa-chess-king,
@@ -167,17 +166,24 @@ button:hover {
 }
 
 .player-color {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 50px 0 0;
-  border-color: #007bff transparent transparent transparent;
+  right: auto;
+  margin: 0;
+  padding: 0;
+  border-color: red;
+  background-color: red;
+  width: 21px;
+  height: 21px;
+  z-index: 1;
+  -webkit-transition: border-color 0.1s ease;
+  transition: border-color 0.1s ease;
 }
 .player-color .fa-flag {
-  z-index: 1;
-  position: absolute;
+  cursor: default;
+  position: relative;
   top: 0;
   left: 0;
+  font-size: 0.7em;
+  margin: 0;
 }
 
 .player {
@@ -185,8 +191,35 @@ button:hover {
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto auto;
   padding: 34px;
+  margin-bottom: 13px;
   border: 1px solid #e3e3e3;
   position: relative;
+}
+.player.white {
+  background-color: #ffffff;
+  color: #000000;
+}
+.player.white .player-name,
+.player.white .player-status {
+  color: #000000;
+}
+.player.white .player-material {
+  background-color: #e3e3e3;
+  color: #575757;
+}
+.player.black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.player.black .player-name {
+  color: #ffffff;
+}
+.player.black .player-status {
+  color: #e3e3e3;
+}
+.player.black .player-material {
+  background-color: #ffffff;
+  color: #000000;
 }
 .player .player-color {
   position: absolute;
@@ -215,7 +248,7 @@ button:hover {
 
 .total-play-time {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 400;
   color: #575757;
 }
@@ -228,9 +261,13 @@ button:hover {
   display: grid !important;
   grid-template-columns: 55% auto;
   grid-template-rows: auto auto auto auto auto auto;
-  padding: 34px;
+  padding-top: 5px;
+  padding-right: 21px;
+  padding-bottom: 21px;
+  padding-left: 21px;
   border: 1px solid #e3e3e3;
   position: relative;
+  margin-bottom: 13px;
 }
 .save-slot .file-number {
   position: absolute;
@@ -265,11 +302,25 @@ button:hover {
 .move-list {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 5px;
 }
-.move-list tr,
-.move-list td {
+.move-list th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.move-list tr {
   border-top: 1px solid #e3e3e3;
-  padding: 5px;
+}
+.move-list .grey {
+  background-color: #e3e3e3;
+}
+.move-list .black {
+  background-color: #000000;
+  color: #ffffff;
+}
+.move-list .white {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .message-content {
@@ -397,21 +448,36 @@ button:hover {
   font-style: italic;
   margin-bottom: 13px;
 }
-.header nav {
+.header nav.main-menu {
   margin-top: 21px;
+  padding-bottom: 13px;
 }
-.header nav ul li {
+.header nav.main-menu ul li {
   padding-top: 5px;
   padding-right: 5px;
 }
-.header nav ul ul li {
+.header nav.main-menu ul ul li {
   padding-left: 5px;
 }
-.header nav ul ul li a {
+.header nav.main-menu ul ul li a {
   color: #8c8c8c;
 }
-.header nav a {
+.header nav.main-menu a {
   color: #ffffff;
+}
+.header nav.user-menu {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 13px;
+}
+.header nav.user-menu .user {
+  grid-column: 1;
+  grid-row: 1;
+}
+.header nav.user-menu .sign-out {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .play-view {

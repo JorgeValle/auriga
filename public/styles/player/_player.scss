@@ -8,11 +8,49 @@
   // Padding
   padding: $base-unit * fibonacci(8);
 
+  // Margin
+  margin-bottom: $base-unit * fibonacci(6);
+
   // Borders
   border: 1px solid $lightest-grey;
 
   // Position
   position: relative;
+
+  // White player
+  &.white {
+    background-color: $white;
+    color: $black;
+
+    .player-name,
+    .player-status {
+      color: $black;
+    }
+    
+    .player-material {
+      background-color: $lightest-grey;
+      color: $middle-grey;
+    }
+  }
+
+  // Black player
+  &.black {
+    background-color: $black;
+    color: $white;
+
+    .player-name{
+      color: $white;
+    }
+
+    .player-status {
+      color: $lightest-grey;
+    }
+
+    .player-material {
+      background-color: $white;
+      color: $black;
+    }
+  }
 
   .player-color {
     position: absolute;

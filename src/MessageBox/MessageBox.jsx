@@ -25,15 +25,21 @@ class MessageBox extends React.Component {
 
   // Message up handler
   handleMessageUp() {
+
+    let currentMessage = this.state.messageNum;
+
     this.setState({
-      messageNum: 3
+      messageNum: currentMessage + 1
     });
   };
 
   // Message down handler
   handleMessageDown() {
+
+    let currentMessage = this.state.messageNum;
+
     this.setState({
-      messageNum: 1
+      messageNum: currentMessage - 1
     })
   };
 
@@ -46,8 +52,10 @@ class MessageBox extends React.Component {
         <MessageContent
           messages={this.props.messages}
           messageNum={this.state.messageNum}
+          onMessageFirst={this.handleMessageFirst}
           onMessageDown={this.handleMessageDown}
-          onMessageUp={this.handleMessageUp} />
+          onMessageUp={this.handleMessageUp}
+          onMessageLast={this.handleMessageLast} />
       </section>
     );
   }

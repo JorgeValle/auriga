@@ -17,7 +17,7 @@ class Header extends React.Component {
         <span className="version">
           <i className="fas fa-code-branch"></i> Alpha
         </span>
-        <nav>
+        <nav className="main-menu">
           <ul>
             <li>
               <Link to="/play">Play</Link>
@@ -40,7 +40,30 @@ class Header extends React.Component {
               </ul>
             </li>
           </ul>
+          <ul>
+            <li>
+              <Link to="/watch">Watch</Link>
+            </li>
+          </ul>
         </nav>
+
+        <hr />
+
+        <nav className="user-menu">
+          <div className="user">
+            <Link to="/user">
+              <i className="far fa-user" title="User menu"></i>
+            </Link>
+          </div>
+          <div className="sign-out">
+            <Link to="/signed-out">
+              <i className="fas fa-sign-out-alt" title="Sign out"></i>
+            </Link>
+          </div>
+        </nav>
+
+
+
       </header>
     );
   }

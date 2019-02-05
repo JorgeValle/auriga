@@ -6,13 +6,19 @@
   grid-template-rows: auto auto auto auto auto auto;
 
   // Padding
-  padding: $base-unit * fibonacci(8);
+  padding-top: $base-unit * fibonacci(4);
+  padding-right: $base-unit * fibonacci(7);
+  padding-bottom: $base-unit * fibonacci(7);
+  padding-left: $base-unit * fibonacci(7);
 
   // Borders
   border: 1px solid $lightest-grey;
 
   // Position
   position: relative;
+
+  // Margin
+  margin-bottom: $base-unit * fibonacci(6);
 
   .file-number {
     position: absolute;

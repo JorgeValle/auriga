@@ -17,9 +17,9 @@ class Player extends React.Component {
   // To make UI interactive, we need to be able to trigger changes to underlying data model
   render() {
     return (
-      <section className="player">
+      <section className={`player ${this.props.player.color}`}>
         {/* <PlayerImage player={this.props.player} /> */}
-        <PlayerColor player={this.props.player} />
+        {/* <PlayerColor player={this.props.player} /> */}
         <PlayerName player={this.props.player} />
         <PlayerStatus player={this.props.player} />
         <PlayerMaterial player={this.props.player} />

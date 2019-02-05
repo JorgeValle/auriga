@@ -11,6 +11,8 @@ import MessageBox from './MessageBox/MessageBox';
 import SaveSlot from './SaveSlot/SaveSlot';
 import MoveList from './Moves/MoveList';
 import PlayView from './Views/PlayView';
+import UserView from './Views/UserView';
+import SignedOutView from './Views/SignedOutView';
 
 const PLAYERS = [
   {
@@ -117,6 +119,14 @@ function App() {
             {/* Play view */}
             <Route path="/play" render={(props) =>
               <PlayView {...props} player={PLAYERS[0]} messages={MESSAGES} />
+            } />
+            {/* User view */}
+            <Route path="/user" render={(props) =>
+              <UserView />
+            } />
+            {/* Sign out view */}
+            <Route path="/signed-out" render={(props) =>
+              <SignedOutView />
             } />
           </main>
       </div>

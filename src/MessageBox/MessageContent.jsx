@@ -15,6 +15,8 @@ class MessageContent extends React.Component {
   }
 
   handleMessageUp(e) {
+    console.log('e.target is:');
+    console.log(e.target);
     this.props.onMessageUp(e.target);
   }
 
@@ -33,11 +35,14 @@ class MessageContent extends React.Component {
     return (
       <div>
         <p className="message-content">{messages[messageNum]}</p>
+        <nav className="message-nav">
+          <button onClick={this.handleMessageDown}>First</button>
+          <button onClick={this.handleMessageDown}>Previous</button>
+          <button onClick={this.handleMessageUp}>Next</button>
+          <button onClick={this.handleMessageUp}>Latest</button>
+        </nav>
         <span>{messageNum} / {messages.length}</span>
-        <button onClick={this.handleMessageDown}>First</button>
-        <button onClick={this.handleMessageDown}>Previous</button>
-        <button onClick={this.handleMessageUp}>Next</button>
-        <button onClick={this.handleMessageUp}>Latest</button>
+
       </div>
 
     );
