@@ -31,7 +31,8 @@ const PLAYERS = [
 const MESSAGES = [
   'I just took your bishop, and you are down three pawns. Definitely winning.',
   'Morbi at ligula ut orci pharetra interdum nec elementum velit. Suspendisse ac felis odio. Phasellus vestibulum elit quis augue rhoncus convallis.',
-  'Donec libero felis, feugiat eget sapien eget, vehicula vehicula odio. Quisque eu viverra erat. Phasellus sodales nibh ultricies eros sagittis lacinia.'
+  'Donec libero felis, feugiat eget sapien eget, vehicula vehicula odio. Quisque eu viverra erat. Phasellus sodales nibh ultricies eros sagittis lacinia.',
+  'You are cornered: I will now take your queen.'
 ];
 
 const TIME = [
@@ -104,9 +105,7 @@ function App() {
             {/* Message box */}
             <Route path="/message-box" render={(props) =>
               <div>
-                <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[0]} />
-                {/* <MessageBox {...props} player={PLAYERS[1]} message={MESSAGES[1]} />
-                <MessageBox {...props} player={PLAYERS[0]} message={MESSAGES[2]} /> */}
+                <MessageBox {...props} player={PLAYERS[0]} messages={MESSAGES} />
               </div>
             } />
             {/* Move list*/}
@@ -117,7 +116,7 @@ function App() {
             } />
             {/* Play view */}
             <Route path="/play" render={(props) =>
-              <PlayView {...props} player={PLAYERS[0]} message={MESSAGES[0]} />
+              <PlayView {...props} player={PLAYERS[0]} messages={MESSAGES} />
             } />
           </main>
       </div>

@@ -9,25 +9,45 @@ class MessageBox extends React.Component {
   // DialogueBox component owns page number state
   // Components should only update their own state
   constructor(props) {
+
     super(props);
+
+    // Setting base state
     this.state = {
-      pageNum: 0
+      messageNum: 0
     };
-    this.handlePageUp = this.handlePageUp.bind(this);
+
+    // State handlers
+    this.handleMessageUp = this.handleMessageUp.bind(this);
+    this.handleMessageDown = this.handleMessageDown.bind(this);
+
   }
 
-  handlePageUp() {
+  // Message up handler
+  handleMessageUp() {
     this.setState({
-      pageNum: 1
+      messageNum: 3
     });
-  }
+  };
 
+  // Message down handler
+  handleMessageDown() {
+    this.setState({
+      messageNum: 1
+    })
+  };
+
+  // Render method
   render() {
     return (
       <section className="message-box">
         <PlayerImage player={this.props.player} />
         <PlayerName player={this.props.player} />
-        <MessageContent message={this.props.message} pageNum={this.state.pageNum} />
+        <MessageContent
+          messages={this.props.messages}
+          messageNum={this.state.messageNum}
+          onMessageDown={this.handleMessageDown}
+          onMessageUp={this.handleMessageUp} />
       </section>
     );
   }

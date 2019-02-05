@@ -15,7 +15,7 @@ class PlayView extends React.Component {
       <section className="play-view">
         <Chessboard player={this.props.player} />
         <Player player={this.props.player} />
-        <MessageBox player={this.props.player} message={this.props.message}/>
+        <MessageBox player={this.props.player} messages={this.props.messages}/>
       </section>
     );
   }
